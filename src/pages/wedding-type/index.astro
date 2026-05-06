@@ -1,0 +1,83 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import WeddingTypeHero from '@/components/wedding-type/WeddingTypeHero.astro';
+
+const weddingTypes = [
+  {
+    title: "Luxury Weddings",
+    description: "Experience the pinnacle of elegance with our hand-picked selection of high-end villas and five-star resorts.",
+    image: "https://images.pexels.com/photos/12715491/pexels-photo-12715491.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    link: "/wedding-type/luxury-weddings/"
+  },
+  {
+    title: "Budget Weddings",
+    description: "Beautiful ceremonies that don't break the bank. Discover our value-focused packages in stunning locations.",
+    image: "https://images.pexels.com/photos/30655508/pexels-photo-30655508.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    link: "/wedding-type/budget-weddings/"
+  },
+  {
+    title: "All-Inclusive Weddings",
+    description: "Stress-free planning with everything covered, from catering to décor, in one simple package.",
+    image: "https://images.pexels.com/photos/34808246/pexels-photo-34808246.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    link: "/wedding-type/all-inclusive-weddings/"
+  },
+  {
+    title: "Boat Weddings",
+    description: "Say your vows on the water. Unique yacht and boat wedding experiences across the Mediterranean.",
+    image: "https://images.pexels.com/photos/5046521/pexels-photo-5046521.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    link: "/wedding-type/boat-weddings/"
+  }
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Wedding Types | The Wedding Travel Company",
+  "description": "Explore different wedding styles abroad, from luxury villas to budget-friendly beach ceremonies and unique boat weddings.",
+  "url": "https://twtc-site.pagesmith.app/wedding-type/"
+};
+---
+
+<BaseLayout title="Wedding Types | The Wedding Travel Company" description="Explore different wedding styles abroad, from luxury villas to budget-friendly beach ceremonies and unique boat weddings." jsonLd={jsonLd}>
+  <main data-ps="src/pages/wedding-type/index.astro:tis8q">
+    <WeddingTypeHero 
+      title="Wedding Styles"
+      description="Whether you're dreaming of a lavish luxury affair or a simple ceremony on the sand, discover the perfect style for your celebration."
+      image="https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg?auto=compress&cs=tinysrgb&w=1920"
+      tags={['ALL STYLES', 'EXPERT PLANNERS', 'TAILORED PACKAGES']}
+      ctaText="Find Your Perfect Style"
+    />
+
+    <FeaturedCollection />
+
+    <section class="pt-6 pb-12 md:py-20 bg-white" data-ps="src/pages/wedding-type/index.astro:types-grid">
+      <div class="max-w-7xl mx-auto px-4 md:px-6" data-ps="src/pages/wedding-type/index.astro:i69p58">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-ps="src/pages/wedding-type/index.astro:i69p57">
+          {weddingTypes.map((type, __psIdx) => (
+            <a href={type.link} class="group relative overflow-hidden rounded-2xl aspect-[16/10] md:aspect-[16/8]" data-ps="src/pages/wedding-type/index.astro:type-card">
+              <img 
+                src={type.image} 
+                alt={type.title}
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy" data-ps={`src/pages/wedding-type/index.astro:mzle6l-${__psIdx}`} />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" data-ps={`src/pages/wedding-type/index.astro:i69p56-${__psIdx}`}></div>
+              <div class="absolute inset-0 p-8 flex flex-col justify-end" data-ps={`src/pages/wedding-type/index.astro:i69p55-${__psIdx}`}>
+                <h2 class="font-serif text-3xl text-white mb-2" data-ps={`src/pages/wedding-type/index.astro:6e105z-${__psIdx}`}>{type.title}</h2>
+                <p class="text-stone-200 text-sm max-w-md mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-ps={`src/pages/wedding-type/index.astro:jkraix-${__psIdx}`}>
+                  {type.description}
+                </p>
+                <div class="inline-flex items-center gap-2 text-white font-bold text-xs uppercase tracking-widest" data-ps={`src/pages/wedding-type/index.astro:i69p54-${__psIdx}`}>
+                  View Venues
+                  <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

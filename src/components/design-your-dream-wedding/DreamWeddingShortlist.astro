@@ -1,0 +1,78 @@
+---
+// Shortlist Form Section
+---
+
+<section id="shortlist" class="py-24 px-6 bg-surface">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-[42px] font-bold font-serif text-secondary mb-4">
+        Want a personalised shortlist?
+      </h2>
+      <p class="text-muted-foreground max-w-2xl mx-auto">
+        Our wedding experts are here to save you hours of searching. Share your vision, and we'll hand-pick 3-5 venues that perfectly match your style, budget, and guest count.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-10 shadow-sm">
+      <div class="flex flex-wrap gap-8 mb-10">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-primary">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-secondary">Free Consultation</h4>
+            <p class="text-xs text-muted-foreground">No-obligation chat with our destination specialists.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center text-primary">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-secondary">ATOL Protected</h4>
+            <p class="text-xs text-muted-foreground">Complete financial peace of mind for your wedding travel.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Your Name</label>
+            <input type="text" placeholder="e.g. Sarah Jones" class="w-full border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Email Address</label>
+            <input type="email" placeholder="e.g. sarah@example.com" class="w-full border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Phone Number</label>
+            <input type="tel" placeholder="e.g. 07123 456789" class="w-full border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Estimated Guests</label>
+            <select class="w-full border border-border rounded-lg px-4 py-3 text-sm appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23737373%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M19%209l-7%207-7-7%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25em_1.25em] bg-[right_1rem_center] bg-no-repeat focus:outline-none focus:ring-1 focus:ring-primary">
+              <option>Just the two of us</option>
+              <option>Small (Up to 20)</option>
+              <option>Medium (20-50)</option>
+              <option>Large (50-100)</option>
+              <option>100+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Describe your dream wedding in one sentence</label>
+          <textarea placeholder="e.g. An intimate sunset ceremony on a private beach in Greece..." class="w-full border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary min-h-[100px] resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors shadow-lg shadow-primary/20">
+          Get My Shortlist
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

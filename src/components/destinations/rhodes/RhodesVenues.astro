@@ -1,0 +1,416 @@
+---
+// Rhodes Venues Section
+import { WishlistButton } from '@/components/wishlist/WishlistButton';
+import { VenueImageSlider } from '@/components/destinations/VenueImageSlider';
+---
+
+<section class="py-24 px-6 bg-background" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:7n8m11">
+  <div class="max-w-7xl mx-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sy">
+    <div class="text-center mb-16" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sx">
+      <h2 class="text-[42px] font-bold font-serif text-secondary mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:68krab">Your Dream Rhodes Wedding</h2>
+      <p class="text-muted-foreground max-w-3xl mx-auto leading-relaxed" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:2n33tn">
+        Rhodes, the island of knights, is one of the most popular wedding destinations in Greece. With over 300 days of sunshine a year, it offers the perfect blend of Mediterranean charm, ancient history, and reliable weather.
+      </p>
+    </div>
+
+    <div class="bg-surface rounded-2xl p-8 mb-12" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sw">
+      <div class="flex flex-wrap gap-6 justify-center text-[10px] font-bold uppercase tracking-widest" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sv">
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:5r20kd"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>English-speaking wedding specialists</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:5r20ke"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Legally recognised ceremonies</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:5r20kf"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Stunning sunset backdrops</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:5r20kg"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Exceptional hospitality & food</span>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1su">
+      <div data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1st">
+        <h3 class="text-[28px] font-bold font-serif text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzohy">Selected Venues</h3>
+        <p class="text-muted-foreground" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:2n33t1">Whether you envision a barefoot ceremony on the golden sands, a romantic sunset wedding overlooking the Acropolis of Lindos, or a rustic celebration in a traditional village, Rhodes has a venue to match every vision.</p>
+      </div>
+      <div class="flex items-center gap-2" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ss">
+        <span class="text-sm text-muted-foreground" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:5r20l2">Venue Type</span>
+        <select class="border border-border rounded-lg px-4 py-2 text-sm bg-white">
+          <option>All Venues</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1y1">
+      <!-- Kalithea Springs (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1y0">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1xz">
+          <VenueImageSlider client:load images={["https://images.pexels.com/photos/13538484/pexels-photo-13538484.jpeg?auto=compress&cs=tinysrgb&w=800"]} alt="Kalithea Springs" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1xy">
+            <span class="w-1.5 h-1.5 rounded-full bg-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllho"></span>Featured Venue
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1xx">
+          <WishlistButton 
+          client:load
+          venue={{
+          id: "kalithea-springs",
+          name: "Kalithea Springs",
+          location: "Rhodes, Greece",
+          image: "https://images.pexels.com/photos/13538484/pexels-photo-13538484.jpeg?auto=compress&cs=tinysrgb&w=800",
+          priceFrom: "£2,999",
+          url: "/venues/kalithea-springs"
+          }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1xb">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1xa">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6dz">Rhodes • Historic Monument</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x9">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vg">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vf"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ve"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vd"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vc"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uq">
+                  <div class="absolute top-0 left-0 bottom-0 w-[90%] bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1up"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllhn">4.9</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:94pk4s">Kalithea Springs</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6dy">A magnificent historic spa with stunning pebble mosaics and magnificent architecture right by the sea.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x8">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x7">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllhm">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllhl">£2,999</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x6">Based on 30 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x5">
+            <a href="/venues/kalithea-springs" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp66m">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp660">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lindos Blu (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x4">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x3">
+          <VenueImageSlider client:load images={["https://images.pexels.com/photos/18774893/pexels-photo-18774893.jpeg?auto=compress&cs=tinysrgb&w=800"]} alt="Lindos Blu" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1x2">
+            <span class="w-1.5 h-1.5 rounded-full bg-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllhk"></span>Featured Venue
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1wg">
+          <WishlistButton 
+          client:load
+          venue={{
+          id: "lindos-blu",
+          name: "Lindos Blu",
+          location: "Rhodes, Greece",
+          image: "https://images.pexels.com/photos/18774893/pexels-photo-18774893.jpeg?auto=compress&cs=tinysrgb&w=800",
+          priceFrom: "£4,200",
+          url: "/venues/lindos-blu"
+          }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1wf">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1we">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6dx">Lindos • Luxury Hotel</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1wd">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uo">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1un"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1um"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ul"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uk"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uj"></div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgy">5.0</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzon9">Lindos Blu Luxury Hotel</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6dw">Adults-only luxury boutique hotel with breathtaking views over Vlicha Bay, ideal for intimate and lavish events.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1wc">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1wb">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgx">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgw">£4,200</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1wa">Based on 20 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1w9">
+            <a href="/venues/lindos-blu" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65z">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65y">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Atrium Palace (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1w8">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1w7">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&w=800&q=80"]} alt="Atrium Palace" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vl">
+            <span class="w-1.5 h-1.5 rounded-full bg-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgv"></span>Featured Venue
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vk">
+          <WishlistButton 
+          client:load
+          venue={{ id: "atrium-palace", name: "Atrium Palace", location: "Kalathos, Rhodes", image: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&w=800&q=80", priceFrom: "£3,800", url: "#" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vj">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vi">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6dv">Kalathos • Resort</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vh">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ui">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uh"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tv"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tu"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tt"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ts">
+                  <div class="absolute top-0 left-0 bottom-0 w-[80%] bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tr"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgu">4.8</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzon8">Atrium Palace Resort</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6du">A luxurious beachfront oasis featuring exquisite palm gardens, waterfalls, and elegant traditional Greek architecture.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vg">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vf">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgt">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgs">£3,800</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ve">Based on 40 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vd">
+            <a href="#" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65x">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65w">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filerimos Cross (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1vc">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uq">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&w=800&q=80"]} alt="Filerimos Cross" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1up">
+            <span class="w-1.5 h-1.5 rounded-full bg-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgr"></span>Featured Venue
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uo">
+          <WishlistButton 
+          client:load
+          venue={{ id: "filerimos-cross", name: "Filerimos Cross", location: "Ialysos, Rhodes", image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&w=800&q=80", priceFrom: "£2,500", url: "#" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1un">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1um">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6dt">Ialysos • Historic Site</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ul">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tq">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tp"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1to"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tn"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tm"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1t0">
+                  <div class="absolute top-0 left-0 bottom-0 w-[70%] bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sz"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgq">4.7</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzon7">Filerimos Cross</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d7">A uniquely romantic, forest-surrounded historic setting perfect for atmospheric and enchanting civil ceremonies.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uk">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uj">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllgp">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllg3">£2,500</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ui">Based on 20 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1uh">
+            <a href="#" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65v">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65u">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 1 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tv">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tu">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&w=800&q=80"]} alt="Rhodes Grand Villa" />
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tt">
+          <WishlistButton 
+          client:load
+          venue={{ id: "rhodes-grand-villa", name: "Rhodes Grand Villa", location: "Lindos, Rhodes", image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&w=800&q=80", priceFrom: "£2,800", url: "#" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ts">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tr">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d6">Lindos • Private Villa</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tq">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sy">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sx"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sw"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sv"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1su"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1st">
+                  <div class="absolute top-0 left-0 bottom-0 w-[70%] bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ss"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllg2">4.7</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzon6">Rhodes Grand Villa</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d5">An exquisite private villa with panoramic sea views and lush gardens, perfect for a secluded and intimate wedding celebration.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tp">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1to">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllg1">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllg0">£2,800</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tn">Based on 20 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1tm">
+            <a href="#" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65t">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65s">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 2 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1t0">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sz">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80"]} alt="St Pauls Bay Chapel" />
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sy">
+          <WishlistButton 
+          client:load
+          venue={{ id: "st-pauls-bay", name: "St Pauls Bay Chapel", location: "Lindos, Rhodes", image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80", priceFrom: "£1,900", url: "#" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sx">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sw">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d4">Lindos • Chapel</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sv">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sr">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s5"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s4"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s3"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s2"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s1">
+                  <div class="absolute top-0 left-0 bottom-0 w-[90%] bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s0"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllfz">4.9</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzon5">St Paul's Bay Chapel</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d3">A picturesque whitewashed chapel sitting right by the azure waters of one of Greece's most famous and stunning bays.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1su">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1st">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllfy">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllfx">£1,900</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ss">Based on 15 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sr">
+            <a href="#" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp65r">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp655">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 3 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sr">
+      <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sq">
+      <VenueImageSlider client:load images={["https://images.pexels.com/photos/13907756/pexels-photo-13907756.jpeg?auto=format&w=800&q=80"]} alt="Elias Hill" />
+      <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sp">
+          <WishlistButton 
+          client:load
+          venue={{ id: "rhodes-estate", name: "Rhodes Estate Gardens", location: "Rhodes Town", image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80", priceFrom: "£3,200", url: "#" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s2">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s1">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d2">Rhodes Town • Estate</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1s0">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1rz">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ry"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1rx"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1rw"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx8"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx7">
+                  <div class="absolute top-0 left-0 bottom-0 w-[60%] bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx6"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllfw">4.6</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzon4">Rhodes Estate Gardens</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d1">A luxurious sprawling estate offering panoramic vistas, elegant banqueting, and a rustic aesthetic for ceremonies.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1rz">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1ry">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllfv">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllfu">£3,200</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1rx">Based on 50 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1rw">
+            <a href="#" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp654">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp653">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 4 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sh">
+      <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sg">
+      <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&w=800&q=80"]} alt="Pefkos Beach" />
+      <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:f5o1sf">
+          <WishlistButton 
+          client:load
+          venue={{ id: "elysium-beach", name: "Elysium Beach Pavilion", location: "Faliraki, Rhodes", image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&w=800&q=80", priceFrom: "£2,600", url: "#" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx5">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx4">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6d0">Faliraki • Seaside Pavilion</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx3">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx5">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx4"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx3"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx2"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx1"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx0">
+                  <div class="absolute top-0 left-0 bottom-0 w-[80%] bg-[#00aa6c]" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtwz"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllf8">4.8</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:kwzon3">Elysium Beach Pavilion</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:auk6cz">Celebrate with the Mediterranean breeze on a stylish modern pavilion directly overlooking the golden sands.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx2">
+            <div class="flex flex-col" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx1">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllf7">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:ysllf6">£2,600</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtx0">Based on 30 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:u9xtwz">
+            <a href="#" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp652">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/rhodes/RhodesVenues.astro:3jp651">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

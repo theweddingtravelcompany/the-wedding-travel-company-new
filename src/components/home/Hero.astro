@@ -1,0 +1,88 @@
+---
+// Hero Section
+---
+
+<section id="hero" class="relative bg-secondary md:min-h-[700px] flex items-center pt-6 pb-10 md:py-32 px-6 overflow-hidden" data-ps="src/components/home/Hero.astro:hero">
+  <!-- Background Image & Overlay -->
+  <div class="absolute inset-0 z-0" data-ps="src/components/home/Hero.astro:iy4tae">
+    <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1755795652039-c95221cc55fa?auto=format&w=1920&q=80" 
+      alt="Romantic destination wedding" 
+      class="w-full h-full object-cover"
+      loading="eager"
+      fetchpriority="high" data-ps="src/components/home/Hero.astro:gfvoyx" />
+    <div class="absolute inset-0 bg-secondary/45 bg-gradient-to-r from-secondary/60 to-transparent" data-ps="src/components/home/Hero.astro:iy4taf"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center" data-ps="src/components/home/Hero.astro:iy4tag">
+    <!-- Left: Content -->
+    <div class="text-white hero-animate" data-ps="src/components/home/Hero.astro:iy4tah">
+      <h1 class="text-[72px] font-bold leading-[1.1] mb-6" data-ps="src/components/home/Hero.astro:307k1o">
+        Design Your Dream <br />
+        <span class="text-secondary-foreground font-serif italic font-normal" data-ps="src/components/home/Hero.astro:z1i1xb">Wedding Abroad</span>
+      </h1>
+      <p class="text-[24px] leading-relaxed max-w-xl text-white/90" data-ps="src/components/home/Hero.astro:6uykn4">
+        Award-winning destination wedding specialists trusted by thousands of couples each year.
+      </p>
+
+      <!-- Trust Badges Desktop -->
+      <div class="hidden lg:flex items-center gap-8 mt-12 opacity-90" data-ps="src/components/home/Hero.astro:ecxgfb">
+        <img src="https://cdn.pagesmith.app/4604757a/images/a31_sml_win-320.webp" alt="British Travel Awards 2024 Winner" class="h-24 w-auto drop-shadow-lg" data-ps="src/components/home/Hero.astro:fibi81" />
+        <img src="https://cdn.pagesmith.app/4604757a/images/ABTA-LOGO-640.webp" alt="ABTA Logo" class="h-12 w-auto brightness-0 invert" data-ps="src/components/home/Hero.astro:fibi80" />
+      </div>
+    </div>
+
+    <!-- Right: Form Card -->
+    <div class="flex flex-col items-center lg:items-end hero-animate hero-animate-delay-2 mb-8 md:mb-0" data-ps="src/components/home/Hero.astro:ecxgf3">
+      <div class="bg-white rounded-[32px] p-6 md:p-12 shadow-2xl max-w-md w-full text-foreground" data-ps="src/components/home/Hero.astro:ecxgf4">
+        <h2 class="text-[24px] font-bold font-serif text-secondary mb-8" data-ps="src/components/home/Hero.astro:bo7d5x">Let's Start Planning</h2>
+        
+        <form class="space-y-2.5">
+          <div data-ps="src/components/home/Hero.astro:ecxgfa">
+            <select aria-label="Destination" class="w-full border border-border rounded-md px-4 py-3 text-sm appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23737373%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M19%209l-7%207-7-7%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25em_1.25em] bg-[right_1rem_center] bg-no-repeat focus:outline-none focus:ring-1 focus:ring-primary">
+              <option>Destination</option>
+              <option>Cyprus</option>
+              <option>Greece</option>
+              <option>Italy</option>
+            </select>
+          </div>
+
+          <div data-ps="src/components/home/Hero.astro:ecxgfb">
+            <select aria-label="Arrival Month" class="w-full border border-border rounded-md px-4 py-3 text-sm appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23737373%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M19%209l-7%207-7-7%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25em_1.25em] bg-[right_1rem_center] bg-no-repeat focus:outline-none focus:ring-1 focus:ring-primary">
+              <option>Arrival Month</option>
+              <option>March 2026</option>
+              <option>April 2026</option>
+            </select>
+          </div>
+
+          <div data-ps="src/components/home/Hero.astro:ecxgf6">
+            <input type="text" aria-label="Full Name" placeholder="Full Name" class="w-full border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+
+          <div data-ps="src/components/home/Hero.astro:ecxgf7">
+            <input type="email" aria-label="Email Address" placeholder="Email Address" class="w-full border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+
+          <div data-ps="src/components/home/Hero.astro:ecxgf9">
+            <input type="tel" aria-label="Phone Number" placeholder="Phone Number" class="w-full border border-border rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+          </div>
+
+          <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors shadow-lg shadow-primary/20 mt-4" data-ps="src/components/home/Hero.astro:c0ayv4">
+            Enquire Now
+          </button>
+        </form>
+
+        <div class="mt-6 flex flex-row flex-wrap justify-center items-center gap-x-4 gap-y-2 text-[8px] font-bold text-muted-foreground uppercase tracking-widest border-t border-border pt-6 text-center" data-ps="src/components/home/Hero.astro:ecxgfc">
+          <span class="inline-block" data-ps="src/components/home/Hero.astro:z1i1xa">ABTA Bonded</span>
+          <span class="inline-block" data-ps="src/components/home/Hero.astro:z1i1wo">Award Winning</span>
+          <span class="inline-block" data-ps="src/components/home/Hero.astro:z1i1wn">5000+ Weddings</span>
+        </div>
+      </div>
+
+      <!-- Trust Badges Mobile -->
+      <div class="flex lg:hidden items-center justify-center gap-6 mt-8 opacity-90 px-6" data-ps="src/components/home/Hero.astro:ecxgfc">
+        <img src="https://cdn.pagesmith.app/4604757a/images/a31_sml_win-320.webp" alt="British Travel Awards 2024 Winner" class="h-20 w-auto drop-shadow-lg" data-ps="src/components/home/Hero.astro:fibi7z" />
+        <img src="https://cdn.pagesmith.app/4604757a/images/ABTA-LOGO-640.webp" alt="ABTA Logo" class="h-10 w-auto brightness-0 invert" data-ps="src/components/home/Hero.astro:fibi7y" />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,731 @@
+---
+// Venue Info, Gallery & Packages - Unified Layout
+import { ReceptionManager } from '@/components/islands/ReceptionManager';
+import { WishlistButton } from '@/components/wishlist/WishlistButton';
+---
+
+<ReceptionManager client:load />
+
+<section class="py-0 md:py-8 px-0 md:px-6 bg-[#FAFAFA]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:g27rf5">
+  <div class="max-w-7xl mx-auto px-4 md:px-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgy0">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgy1">
+      
+      <!-- Left Column: Hero, Gallery, Info, Packages, Reception Options -->
+      <div class="lg:col-span-8 space-y-8 md:space-y-12 contents lg:block" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgy2">
+        
+        <!-- NEW HERO & GALLERY -->
+        <div class="space-y-1 md:space-y-4 lg:col-span-8 order-1 -mx-4 md:mx-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgy3">
+          <!-- Main Hero Image with Overlay -->
+          <div class="relative md:rounded-3xl overflow-hidden aspect-[4/3] md:aspect-[16/9]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyp">
+            <img id="main-gallery-image" crossorigin="anonymous" src="https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=1200&q=80" alt="St. Raphael Resort" class="w-full h-full object-cover transition-opacity duration-300" loading="eager" fetchpriority="high" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vynclp" />
+            
+            <!-- Top Badges -->
+            <div class="absolute top-4 left-4 right-4 flex justify-between items-start z-10" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyr">
+              <div class="bg-white px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgys">
+                <div class="flex items-center gap-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:tripadvisor-circles">
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:circle-1"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:circle-2"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:circle-3"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:circle-4"></div>
+                  <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:circle-5">
+                    <div class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#00aa6c]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasq"></div>
+                  </div>
+                </div>
+                <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zb83m3">4.5</span>
+              </div>
+              <WishlistButton 
+                client:load
+                venue={{
+                  id: "golden-coast-beach-hotel",
+                  name: "Golden Coast Beach Hotel",
+                  location: "Protaras, Cyprus",
+                  priceFrom: "£2,455",
+                  image: "https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=400&q=80",
+                  url: "/venues/st-raphael-resort/"
+                }}
+                iconOnly={true}
+              />
+            </div>
+
+            <!-- Gallery Navigation Buttons -->
+            <div class="absolute inset-y-0 left-2 right-2 flex items-center justify-between pointer-events-none" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:gallery-nav">
+            <button id="gallery-prev" class="w-8 h-8 md:w-10 md:h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-sm text-secondary transition-all pointer-events-auto active:scale-95" aria-label="Previous image" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ixvqs1">
+            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button id="gallery-next" class="w-8 h-8 md:w-10 md:h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-sm text-secondary transition-all pointer-events-auto active:scale-95" aria-label="Next image" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ixvqs2">
+            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </button>
+            </div>
+
+            <!-- Bottom Text Overlay -->
+            <div class="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:left-6" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyt">
+            <h1 class="text-2xl md:text-5xl font-bold font-serif text-white mb-0.5 md:mb-2 drop-shadow-lg" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:a26ork">Golden Coast Beach Hotel</h1>
+            <p class="text-white/90 flex items-center gap-1.5 text-base md:text-lg font-medium drop-shadow-md" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjyv">
+            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            Protaras, Cyprus
+            </p>
+            </div>
+            </div>
+
+          <!-- Thumbnails (Scrollable on mobile) -->
+          <div class="flex overflow-x-auto py-2 -mx-4 px-4 gap-2 md:gap-4 snap-x snap-mandatory md:mx-0 md:px-0 md:grid md:grid-cols-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyu">
+             <div class="gallery-thumb w-20 md:w-full flex-shrink-0 rounded-xl md:rounded-2xl overflow-hidden aspect-square snap-start ring-2 ring-accent ring-inset cursor-pointer shadow-sm transition-all" data-highres="https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=1200&q=80" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyv">
+               <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=400&q=80" alt="St. Raphael Resort" class="w-full h-full object-cover" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vynclq" />
+             </div>
+             <div class="gallery-thumb w-20 md:w-full flex-shrink-0 rounded-xl md:rounded-2xl overflow-hidden aspect-square snap-start opacity-60 hover:opacity-100 transition-all cursor-pointer shadow-sm ring-0 ring-accent ring-inset" data-highres="https://images.unsplash.com/photo-1763129636673-df7c37cf251d?auto=format&w=1200&q=80" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyw">
+               <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1763129636673-df7c37cf251d?auto=format&w=400&q=80" alt="St. Raphael Resort 2" class="w-full h-full object-cover" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vynclr" />
+             </div>
+             <div class="gallery-thumb w-20 md:w-full flex-shrink-0 rounded-xl md:rounded-2xl overflow-hidden aspect-square snap-start opacity-60 hover:opacity-100 transition-all cursor-pointer shadow-sm ring-0 ring-accent ring-inset" data-highres="https://images.unsplash.com/photo-1767961054378-4092dbeb7c3b?auto=format&w=1200&q=80" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyx">
+               <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1767961054378-4092dbeb7c3b?auto=format&w=400&q=80" alt="St. Raphael Resort 3" class="w-full h-full object-cover" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncls" />
+             </div>
+             <div class="gallery-thumb w-20 md:w-full flex-shrink-0 rounded-xl md:rounded-2xl overflow-hidden aspect-square snap-start opacity-60 hover:opacity-100 transition-all cursor-pointer shadow-sm ring-0 ring-accent ring-inset" data-highres="https://images.unsplash.com/photo-1639664341873-9a5ab1170013?auto=format&w=1200&q=80" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgyy">
+               <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1639664341873-9a5ab1170013?auto=format&w=400&q=80" alt="St. Raphael Resort 4" class="w-full h-full object-cover" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncme" />
+             </div>
+             <div class="gallery-thumb w-20 md:w-full flex-shrink-0 rounded-xl md:rounded-2xl overflow-hidden aspect-square snap-start opacity-60 hover:opacity-100 transition-all cursor-pointer shadow-sm ring-0 ring-accent ring-inset" data-highres="https://images.unsplash.com/photo-1762177446992-4cac5b44a05d?auto=format&w=1200&q=80" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzk">
+               <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1762177446992-4cac5b44a05d?auto=format&w=400&q=80" alt="St. Raphael Resort 5" class="w-full h-full object-cover" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncmf" />
+             </div>
+          </div>
+        </div>
+
+        <!-- Venue Information -->
+        <div class="pt-4 md:pt-8 space-y-6 md:space-y-8 lg:col-span-8 order-3 lg:order-none" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzl">
+          <!-- Section 1: Wedding Venue Information -->
+          <div class="expandable-section" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncmj">
+            <div class="mb-4 md:mb-6" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1g">
+            <h2 class="text-2xl md:text-[28px] font-bold font-serif text-secondary" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:oqlluw">Wedding Venue Information</h2>
+            </div>
+            <div class="content-wrapper overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-48 relative" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1i">
+              <div class="prose prose-lg text-muted-foreground leading-relaxed max-w-none" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1j">
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtv">Situated against the backdrop of the stunning St Paul’s Bay in Lindos, St Paul’s Chapel is an iconic Greek wedding venue, and for good reason. Just beneath the famous landmark, the Acropolis of Lindos, this stunning chapel offers traditional whitewashed walls and a breathtaking view of the sea, for an idyllic setting for any romantic wedding in Greece.</p>
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtu">Only a short distance from the village of Lindos, you can enjoy a blend of authentic Greek architecture and golden sandy beaches with a St Paul's Bay Lindos wedding.</p>
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtt">Explore the cobblestone streets of the local village, then head to the beach and watch the dazzling sunset. You can even say your vows on the stunning shoreline.</p>
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjts">If a magical atmosphere and vibrant local life are what you’re looking for, this is the perfect place to host your destination wedding in Rhodes.</p>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FAFAFA] to-transparent pointer-events-none fade-overlay" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcash"></div>
+            </div>
+            <button class="expand-button text-accent font-bold mt-4 hover:underline transition-all flex items-center gap-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ixfm7y">
+              Read more
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+
+          <!-- Section 2: Weddings at the St Paul's Chapel -->
+          <div class="expandable-section" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncmk">
+            <h2 class="text-xl md:text-2xl font-bold font-serif text-secondary mb-3 md:mb-6" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:oqlluv">Weddings at the St Paul's Chapel</h2>
+            <div class="content-wrapper overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-48 relative" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasi">
+              <div class="prose prose-lg text-muted-foreground leading-relaxed max-w-none" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasj">
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtr">Weddings at St Paul’s Chapel in Rhodes are ideal for a classic, picturesque celebration, with a backdrop of the Aegean Sea, making for fabulous wedding photos and an unforgettable experience for all your guests.</p>
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtq">Your ceremony starts just outside ‌the chapel, where guests can enjoy private panoramic views of the coast. This venue encourages guests to enjoy the moment, and photographs in front of the chapel doors are not permitted.</p>
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtp">Once you’ve said your vows, you can make your way to one of the many local restaurants and tavernas to enjoy authentic Greek menus and delicious wines.</p>
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjto">If you’d prefer a more lavish celebration, you can enjoy a champagne cruise to celebrate your wedding before your reception in the village of Lindos or head down to the shore for a beach wedding celebration.</p>
+                <p class="font-bold" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtn">Please note: Weddings at St Paul's Chapel are held in an area sectioned off in front of the chapel. You will not be able to go inside the chapel or have photos taken directly in front of it</p>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FAFAFA] to-transparent pointer-events-none fade-overlay" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcask"></div>
+            </div>
+            <button class="expand-button text-accent font-bold mt-4 hover:underline transition-all flex items-center gap-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ixfm7z">
+              Read more
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+
+          <!-- Section 3: Why Choose St Paul’s Chapel -->
+          <div class="expandable-section" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncml">
+            <h2 class="text-xl md:text-2xl font-bold font-serif text-secondary mb-3 md:mb-6" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:oqlluu">Why Choose St Paul’s Chapel for Your Greek Wedding Package?</h2>
+            <div class="content-wrapper overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-48 relative" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasl">
+              <div class="prose prose-lg text-muted-foreground leading-relaxed max-w-none" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasm">
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjtm">A St Paul's Bay wedding is an extraordinary experience for you and all your guests, combining stunning natural sites with local charm and privacy.</p>
+                <ul class="list-none space-y-3">
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpfm"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibif6">♥</span> Private ceremony space with panoramic cliffside views</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpfl"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifs">♥</span> Access to the infamous Acropolis of Lindos for unique wedding photos</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpfk"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibift">♥</span> Wide variety of bars, restaurants and tavernas for reception options</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpfj"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifu">♥</span> Champagne cruise opportunities post ceremony</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpfi"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifv">♥</span> Beautiful weather and beach access</li>
+                </ul>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FAFAFA] to-transparent pointer-events-none fade-overlay" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasn"></div>
+            </div>
+            <button class="expand-button text-accent font-bold mt-4 hover:underline transition-all flex items-center gap-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ixfm80">
+              Read more
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+
+          <!-- Section 4: What’s included -->
+          <div class="expandable-section" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncmm">
+            <h2 class="text-xl md:text-2xl font-bold font-serif text-secondary mb-3 md:mb-6" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:oqllut">What’s included in a St Paul’s Chapel Wedding Package?</h2>
+            <div class="content-wrapper overflow-hidden transition-[max-height] duration-500 ease-in-out max-h-48 relative" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcaso">
+              <div class="prose prose-lg text-muted-foreground leading-relaxed max-w-none" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasp">
+                <p data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjt0">When you choose to book a beautiful St Paul’s Chapel wedding with The Wedding Travel Company, you’ll benefit from:</p>
+                <ul class="list-none space-y-3">
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpfh"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifw">♥</span> UK-based wedding planning support</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpev"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifx">♥</span> A private ceremony for up to 30 guests</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpeu"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibify">♥</span> Local coordinates on the ground in Rhodes</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpet"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifz">♥</span> Ceremony set up in Lindos on the day</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmpes"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibig0">♥</span> Legal document handling and event coordination</li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:nzmper"><span class="text-accent mt-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibig1">♥</span> Optional extras for reception venues, catering and live entertainment</li>
+                </ul>
+                <p class="mt-6" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjsz">If you want to know more about the amenities available at St Paul’s Chapel Lindos, or you’re ready to make a booking, get in touch with our wedding planners today!</p>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FAFAFA] to-transparent pointer-events-none fade-overlay" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasq"></div>
+            </div>
+            <button class="expand-button text-accent font-bold mt-4 hover:underline transition-all flex items-center gap-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ixfm81">
+              Read more
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Sidebar -->
+      <div class="lg:col-span-4 order-2 lg:order-none mt-2 md:mt-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasj">
+        <div class="sticky top-24 bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcask">
+          <h2 class="text-2xl md:text-[26px] font-bold font-serif text-secondary mb-4 md:mb-6 leading-tight" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:oqllz5">Getting married at Golden Coast</h2>
+          
+          <div class="mb-8" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasl">
+            <p class="text-[11px] font-bold uppercase tracking-widest text-muted-foreground mb-1" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjy3">From</p>
+            <div class="flex items-baseline gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasm">
+              <span class="text-[40px] font-bold text-accent leading-none" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibibm">£2,455</span>
+            </div>
+            <p class="text-muted-foreground text-sm mt-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjy2">based on 25 people</p>
+          </div>
+
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-center gap-3 text-muted-foreground text-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9ow">
+              <div class="text-[#22C55E] flex-shrink-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasn">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              </div>
+              Low deposits from £150
+            </li>
+            <li class="flex items-center gap-3 text-muted-foreground text-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9ov">
+              <div class="text-[#22C55E] flex-shrink-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcaso">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              </div>
+              0% interest payment plans
+            </li>
+            <li class="flex items-center gap-3 text-muted-foreground text-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9ou">
+              <div class="text-[#22C55E] flex-shrink-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasp">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              </div>
+              ABTA bonded for your peace of mind
+            </li>
+            <li class="flex items-center gap-3 text-muted-foreground text-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9ot">
+              <div class="text-[#22C55E] flex-shrink-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasq">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              </div>
+              Dedicated in-resort wedding planner
+            </li>
+          </ul>
+
+          <a href="/enquire2" class="block w-full bg-accent text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-accent-hover transition-colors mb-3" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xxirlr">
+            Enquire Now
+          </a>
+          <a href="#wedding-packages" class="block w-full bg-white border border-border text-secondary text-center py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-gray-50 transition-colors" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ijjral">
+            View Packages
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full Width Bottom Section -->
+    <div class="space-y-10 md:space-y-16 pt-8 md:pt-16" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasq">
+        <!-- Wedding Packages (Mobile Collapsible) -->
+        <div id="wedding-packages" class="text-center md:text-left scroll-mt-24 bg-white/50 -mx-4 px-4 py-12 md:py-0 md:bg-transparent md:mx-0 md:px-0 rounded-[2rem]" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzo">
+          <h2 class="text-2xl md:text-4xl font-bold font-serif text-secondary mb-2 md:mb-4 text-center" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:oqllz7">Wedding Packages</h2>
+          <p class="text-muted-foreground mb-8 md:mb-10 text-sm md:text-base text-center max-w-2xl mx-auto" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjyt">Tailored packages designed to make your dream wedding a reality, with transparent pricing and full support.</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-left" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzp">
+            <!-- Package 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcaso">
+              <input type="checkbox" id="pkg1" class="peer hidden" />
+              <label for="pkg1" class="p-6 md:p-8 cursor-pointer md:cursor-auto flex justify-between items-center md:block peer-checked:[&_.chevron]:rotate-180 bg-accent text-white" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:frobz3">
+                <div data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzq">
+                  <h3 class="text-xl font-bold font-serif text-white mb-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vm3irl">Create Your Package</h3>
+                  <div class="flex items-baseline gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzr">
+                    <span class="text-3xl font-bold text-white" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zb83m4">Custom</span>
+                    <span class="text-muted-foreground text-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zb83m5">Pricing</span>
+                  </div>
+                </div>
+                <div class="md:hidden" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzs">
+                  <svg class="chevron w-6 h-6 text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </div>
+              </label>
+              <div class="hidden peer-checked:block md:block px-6 pb-6 md:px-8 md:pb-8 pt-0 md:pt-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwgzt">
+                <ul class="space-y-4 text-sm text-muted-foreground mb-8 mt-4 md:mt-0">
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9pw">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zb83m6">♥</span>
+                    UK Based Wedding Planner
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9pv">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zb83m7">♥</span>
+                    Local Wedding Coordinator
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9pu">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zb83m8">♥</span>
+                    Ceremony Floral Decorations
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9pt">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zb83m9">♥</span>
+                    Brides Hair & Makeup
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9ps">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibiam">♥</span>
+                    Wedding Cake
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-1">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibif2">♥</span>
+                    Flower Bouquets
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-2">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibif3">♥</span>
+                    Buttonholes
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-3">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibif4">♥</span>
+                    Photgrapher or Videographer
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-4">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibif5">♥</span>
+                    Private Reception Hire
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-5">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibif6">♥</span>
+                    Accommodation (Discounted for Bride & Groom)
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-6">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifs">♥</span>
+                    Handling of Legal Documentation
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-7">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibift">♥</span>
+                    Assistance with Town Hall
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-8">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifu">♥</span>
+                    Venue Decorations
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-9">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifv">♥</span>
+                    Drinks Packages
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-10">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifw">♥</span>
+                    Buffet or Set Dinner Menus
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-11">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifx">♥</span>
+                    Professional DJ Services
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-12">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibify">♥</span>
+                    Fireworks
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-13">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibifz">♥</span>
+                    Live Bands
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-14">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibig0">♥</span>
+                    Wedding Transportation
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-15">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibig1">♥</span>
+                    Registrar Fees
+                  </li>
+                </ul>
+                <a href="/enquire2" class="block w-full bg-accent text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-accent-hover transition-colors" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xxirmi">Enquire Now</a>
+              </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasp">
+              <input type="checkbox" id="pkg2" class="peer hidden" />
+              <label for="pkg2" class="p-6 md:p-8 cursor-pointer md:cursor-auto flex justify-between items-center md:block peer-checked:[&_.chevron]:rotate-180 bg-accent text-white" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:n6z7b1">
+              <div data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:l4k2m9">
+              <h3 class="text-xl font-bold font-serif text-white mb-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:j9v2k1">Ceremony Only Package</h3>
+              <div class="flex items-baseline gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:m3k9l4">
+              <span class="text-sm text-white/80" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:p2n8v6">From</span>
+              <span class="text-3xl font-bold text-white" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:r5t7g3">£1,499</span>
+                  </div>
+                </div>
+                <div class="md:hidden" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh0h">
+                  <svg class="chevron w-6 h-6 text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </div>
+              </label>
+              <div class="hidden peer-checked:block md:block px-6 pb-6 md:px-8 md:pb-8 pt-0 md:pt-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh0i">
+                <ul class="space-y-4 text-sm text-muted-foreground mb-8 mt-4 md:mt-0">
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9pr">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibiap">♥</span>
+                    UK Based Wedding Planner
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9pq">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibiaq">♥</span>
+                    Local Wedding Coordinator
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9pp">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibiar">♥</span>
+                    Ceremony Floral Decorations
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9po">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibias">♥</span>
+                    Brides Hair & Makeup
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9p2">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibiat">♥</span>
+                    Wedding Cake
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-16">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibign">♥</span>
+                    Flower Bouquets
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-17">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigo">♥</span>
+                    Buttonholes
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-18">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigp">♥</span>
+                    Photgrapher or Videographer
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-19">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigq">♥</span>
+                    Private Reception Hire
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-20">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigr">♥</span>
+                    Accommodation (Discounted for Bride & Groom)
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-21">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigs">♥</span>
+                    Handling of Legal Documentation
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-22">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigt">♥</span>
+                    Assistance with Town Hall
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-23">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigu">♥</span>
+                    Venue Decorations
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-24">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigv">♥</span>
+                    Drinks Packages
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-25">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibigw">♥</span>
+                    Buffet or Set Dinner Menus
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-26">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihi">♥</span>
+                    Professional DJ Services
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-27">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihj">♥</span>
+                    Fireworks
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-28">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihk">♥</span>
+                    Live Bands
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-29">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihl">♥</span>
+                    Wedding Transportation
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-30">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihm">♥</span>
+                    Registrar Fees
+                  </li>
+                </ul>
+                <a href="/enquire2" class="block w-full bg-accent text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-accent-hover transition-colors" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xxirmh">Enquire Now</a>
+              </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasq">
+              <input type="checkbox" id="pkg3" class="peer hidden" />
+              <label for="pkg3" class="p-6 md:p-8 cursor-pointer md:cursor-auto flex justify-between items-center md:block peer-checked:[&_.chevron]:rotate-180 bg-accent text-white" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:h8x4k2">
+              <div data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:z2m5l8">
+              <h3 class="text-xl font-bold font-serif text-white mb-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:v7c3n1">Ceremony & Reception Package</h3>
+              <div class="flex items-baseline gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:q4w9k2">
+              <span class="text-sm text-white/80" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:b8m5x2">From</span>
+              <span class="text-3xl font-bold text-white" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:s3t9l5">£4,999</span>
+                  </div>
+                </div>
+                <div class="md:hidden" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh0l">
+                  <svg class="chevron w-6 h-6 text-secondary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </div>
+              </label>
+              <div class="hidden peer-checked:block md:block px-6 pb-6 md:px-8 md:pb-8 pt-0 md:pt-0" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh0m">
+                <ul class="space-y-4 text-sm text-muted-foreground mb-8 mt-4 md:mt-0">
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9p1">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibibh">♥</span>
+                    UK Based Wedding Planner
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9p0">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibibi">♥</span>
+                    Local Wedding Coordinator
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9oz">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibibj">♥</span>
+                    Ceremony Floral Decorations
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9oy">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibibk">♥</span>
+                    Brides Hair & Makeup
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xdf9ox">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibibl">♥</span>
+                    Wedding Cake
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-31">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihn">♥</span>
+                    Flower Bouquets
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-32">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibiho">♥</span>
+                    Buttonholes
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-33">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihp">♥</span>
+                    Photgrapher or Videographer
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-34">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihq">♥</span>
+                    Private Reception Hire
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-35">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zibihr">♥</span>
+                    Accommodation (Discounted for Bride & Groom)
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-36">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8n">♥</span>
+                    Handling of Legal Documentation
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-37">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8m">♥</span>
+                    Assistance with Town Hall
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-38">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8l">♥</span>
+                    Venue Decorations
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-39">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8k">♥</span>
+                    Drinks Packages
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-40">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8j">♥</span>
+                    Buffet or Set Dinner Menus
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-41">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8i">♥</span>
+                    Professional DJ Services
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-42">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8h">♥</span>
+                    Fireworks
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-43">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8g">♥</span>
+                    Live Bands
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-44">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8f">♥</span>
+                    Wedding Transportation
+                  </li>
+                  <li class="flex items-start gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:inclusions-45">
+                    <span class="text-secondary mt-0.5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:jh5g8e">♥</span>
+                    Registrar Fees
+                  </li>
+                </ul>
+                <a href="/enquire2" class="block w-full bg-accent text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-accent-hover transition-colors" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xxirmg">Enquire Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reception Options (matches 3rd screenshot) -->
+        <div class="pt-4 md:pt-12" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh0n">
+          <h2 class="text-2xl md:text-[28px] font-bold font-serif text-secondary mb-2 md:mb-4 text-center md:text-left" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:oqllz6">Reception Options at Golden Coast</h2>
+          <p class="text-muted-foreground text-sm md:text-lg mb-6 md:mb-8 text-center md:text-left" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjys">Choose from a variety of stunning settings for your celebration, each offering a unique atmosphere to match your wedding style.</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh0o">
+            <!-- Option 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow pb-2 border border-gray-100" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1a">
+              <div class="relative aspect-square md:aspect-[4/3] overflow-hidden m-2 rounded-2xl" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1b">
+                <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1762177446992-4cac5b44a05d?auto=format&w=800&q=80" alt="Seaside Beach Club" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncmg" />
+                <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-accent hover:text-accent-hover shadow-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ijjrai">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                </button>
+                <div class="absolute bottom-3 left-3 bg-white px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest text-primary shadow-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1c">Beach</div>
+              </div>
+              <div class="p-5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1d">
+                <h3 class="text-xl font-bold font-serif text-secondary" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vm3iro">Seaside Beach Club</h3>
+                <p class="text-muted-foreground text-sm mt-3 flex items-center gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjy6">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                  Capacity: 150 guests
+                </p>
+                <button onclick="window.openReceptionPopup('beach-club')" class="mt-6 block w-full bg-primary text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-widest text-[11px] hover:bg-primary-hover transition-colors cursor-pointer" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xxirmf">View Reception</button>
+              </div>
+            </div>
+
+            <!-- Option 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow pb-2 border border-gray-100" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1e">
+              <div class="relative aspect-square md:aspect-[4/3] overflow-hidden m-2 rounded-2xl" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1f">
+                <img src="https://images.pexels.com/photos/36260533/pexels-photo-36260533.jpeg?auto=format&w=800&q=80" alt="The Phoenix Ballroom" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncmh" />
+                <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-accent hover:text-accent-hover shadow-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ijjraj">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                </button>
+                <div class="absolute bottom-3 left-3 bg-white px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest text-primary shadow-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1g">Ballroom</div>
+              </div>
+              <div class="p-5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1h">
+                <h3 class="text-xl font-bold font-serif text-secondary" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vm3irp">The Phoenix Ballroom</h3>
+                <p class="text-muted-foreground text-sm mt-3 flex items-center gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjy5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                  Capacity: 300 guests
+                </p>
+                <button onclick="window.openReceptionPopup('ballroom')" class="mt-6 block w-full bg-primary text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-widest text-[11px] hover:bg-primary-hover transition-colors cursor-pointer" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xxirme">View Reception</button>
+              </div>
+            </div>
+
+            <!-- Option 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow pb-2 border border-gray-100" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1i">
+              <div class="relative aspect-square md:aspect-[4/3] overflow-hidden m-2 rounded-2xl" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ygwh1j">
+                <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1752857015585-e8c5230549c3?auto=format&w=800&q=80" alt="Olive Garden Terrace" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vyncmi" />
+                <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-accent hover:text-accent-hover shadow-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:ijjrak">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                </button>
+                <div class="absolute bottom-3 left-3 bg-white px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest text-primary shadow-sm" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcash">Terrace</div>
+              </div>
+              <div class="p-5" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:zhcasi">
+                <h3 class="text-xl font-bold font-serif text-secondary" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:vm3isb">Olive Garden Terrace</h3>
+                <p class="text-muted-foreground text-sm mt-3 flex items-center gap-2" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:csbjy4">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                  Capacity: 80 guests
+                </p>
+                <button onclick="window.openReceptionPopup('terrace')" class="mt-6 block w-full bg-primary text-white text-center py-3.5 rounded-xl font-bold uppercase tracking-widest text-[11px] hover:bg-primary-hover transition-colors cursor-pointer" data-ps="src/components/venues/st-raphael-resort/VenueInfo.astro:xxirls">View Reception</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Wedding Packages Accordion Logic
+  const packageCheckboxes = document.querySelectorAll('input[type="checkbox"][id^="pkg"]');
+  
+  packageCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', (e) => {
+      const target = e.target as HTMLInputElement;
+      if (target.checked) {
+        // Close other checkboxes
+        packageCheckboxes.forEach(other => {
+          if (other !== target) {
+            (other as HTMLInputElement).checked = false;
+          }
+        });
+      }
+    });
+  });
+
+  // Expandable Sections
+  const sections = document.querySelectorAll('.expandable-section');
+  
+  sections.forEach(section => {
+    const button = section.querySelector('.expand-button');
+    const wrapper = section.querySelector('.content-wrapper');
+    const fade = section.querySelector('.fade-overlay');
+    const inner = wrapper?.querySelector('.prose');
+
+    if (button && wrapper && inner && fade) {
+      button.addEventListener('click', () => {
+        const isExpanded = wrapper.classList.contains('expanded');
+        
+        if (isExpanded) {
+          // Collapse
+          (wrapper as HTMLElement).style.maxHeight = '12rem'; // 48 units = 12rem
+          button.innerHTML = 'Read more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>';
+          fade.classList.remove('opacity-0');
+          wrapper.classList.remove('expanded');
+          // Scroll back to top of section if button is far down
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          // Close other sections first
+          sections.forEach(otherSection => {
+            if (otherSection !== section) {
+              const otherWrapper = otherSection.querySelector('.content-wrapper');
+              const otherButton = otherSection.querySelector('.expand-button');
+              const otherFade = otherSection.querySelector('.fade-overlay');
+              if (otherWrapper && otherButton && otherFade && otherWrapper.classList.contains('expanded')) {
+                (otherWrapper as HTMLElement).style.maxHeight = '12rem';
+                otherButton.innerHTML = 'Read more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>';
+                otherFade.classList.remove('opacity-0');
+                otherWrapper.classList.remove('expanded');
+              }
+            }
+          });
+
+          // Expand current
+          const scrollHeight = inner.scrollHeight;
+          (wrapper as HTMLElement).style.maxHeight = `${scrollHeight}px`;
+          button.innerHTML = 'Read less <svg class="w-4 h-4 rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>';
+          fade.classList.add('opacity-0');
+          wrapper.classList.add('expanded');
+        }
+      });
+    }
+  });
+
+  // Gallery Interactivity
+  const mainImage = document.getElementById('main-gallery-image') as HTMLImageElement;
+  const thumbs = document.querySelectorAll('.gallery-thumb');
+  const prevBtn = document.getElementById('gallery-prev');
+  const nextBtn = document.getElementById('gallery-next');
+  let currentIndex = 0;
+
+  function updateGallery(index: number) {
+    const thumb = thumbs[index];
+    if (!thumb || !mainImage) return;
+
+    // Remove active state from all thumbs
+    thumbs.forEach(t => {
+      t.classList.remove('ring-2', 'opacity-100');
+      t.classList.add('opacity-60', 'ring-0');
+    });
+    
+    // Add active state to current thumb
+    thumb.classList.remove('opacity-60', 'ring-0');
+    thumb.classList.add('ring-2', 'opacity-100');
+    
+    // Update main image source
+    const highResUrl = thumb.getAttribute('data-highres');
+    if (highResUrl) {
+      mainImage.classList.add('opacity-50');
+      setTimeout(() => {
+        mainImage.src = highResUrl;
+        mainImage.classList.remove('opacity-50');
+      }, 150);
+    }
+
+    // Ensure thumb is visible in scroll container on mobile
+    thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    currentIndex = index;
+  }
+
+  if (mainImage && thumbs.length > 0) {
+    thumbs.forEach((thumb, idx) => {
+      thumb.addEventListener('click', () => updateGallery(idx));
+    });
+
+    prevBtn?.addEventListener('click', () => {
+      const nextIdx = (currentIndex - 1 + thumbs.length) % thumbs.length;
+      updateGallery(nextIdx);
+    });
+
+    nextBtn?.addEventListener('click', () => {
+      const nextIdx = (currentIndex + 1) % thumbs.length;
+      updateGallery(nextIdx);
+    });
+  }
+</script>

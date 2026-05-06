@@ -1,0 +1,169 @@
+---
+// Dream Wedding Featured Collection
+import { WishlistButton } from '@/components/wishlist/WishlistButton';
+---
+
+<section class="py-24 px-6 bg-surface" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:fhmyms">
+  <div class="max-w-7xl mx-auto" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2q">
+    <div class="text-center mb-16" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2r">
+      <h2 class="text-[42px] font-bold font-serif text-secondary mb-4" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:2vci80">The Featured Collection</h2>
+      <p class="text-muted-foreground max-w-2xl mx-auto" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m041x5">Our most exceptional venues, selected for their atmosphere and service.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2s">
+      <!-- Venue 1 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2t">
+        <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2u">
+          <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&w=800&q=80" alt="St Raphael Resort" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m3adql" />
+          <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2v">Featured Venue</div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2w">
+            <WishlistButton 
+              client:load
+              venue={{
+                id: "st-raphael",
+                name: "St Raphael Resort",
+                location: "Limassol, Cyprus",
+                image: "https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&w=800&q=80",
+                priceFrom: "£2,995",
+                url: "/venues/st-raphael-resort"
+              }} 
+              iconOnly={true} 
+            />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2x">
+          <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2u">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground m-0" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m041x4">Limassol, Cyprus</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2v">
+              <div class="flex items-center gap-0.5" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2w">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2x"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2y"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2z"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3l"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3m">
+                  <div class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3n"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixs9x">4.9</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:hjrffn">St Raphael Resort</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow line-clamp-2" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m041x3">A luxurious 5-star resort set on Limassol's largest blue flag beach, offering breathtaking Mediterranean views.</p>
+          <div class="flex items-center justify-between border-t border-border pt-6 mb-6" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2y">
+            <div class="flex flex-col" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji2z">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixsca">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixsbo">£2,995</span>
+            </div>
+            <div class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground text-right leading-tight" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3l">Complete Wedding<br />Package</div>
+          </div>
+          <div class="grid grid-cols-2 gap-4" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3m">
+            <a href="/venues/st-raphael-resort" class="bg-accent text-white text-center py-4 rounded-lg text-sm font-bold no-underline hover:bg-accent-hover transition-colors" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:ew6588">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center py-4 hover:opacity-80 transition-opacity" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:ew6587">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venue 2 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3n">
+        <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3o">
+          <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1733776724083-f8ec367f04a9?auto=format&w=800&q=80" alt="Azure Waters Cliffside" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m3adqm" />
+          <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3p">Featured Venue</div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3q">
+            <WishlistButton 
+              client:load
+              venue={{
+                id: "azure-waters",
+                name: "Azure Waters Cliffside",
+                location: "Santorini, Greece",
+                image: "https://images.unsplash.com/photo-1733776724083-f8ec367f04a9?auto=format&w=800&q=80",
+                priceFrom: "£3,499",
+                url: "/venues/st-raphael-resort/"
+              }} 
+              iconOnly={true} 
+            />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3r">
+          <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3o">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground m-0" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m041x2">Santorini, Greece</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3p">
+              <div class="flex items-center gap-0.5" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3q">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3r"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3s"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3t"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3u"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5q"></div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixs9w">5.0</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:hjrffm">Azure Waters Cliffside</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow line-clamp-2" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m041x1">An iconic caldera-view venue offering breathtaking sunset vistas and intimate luxury.</p>
+          <div class="flex items-center justify-between border-t border-border pt-6 mb-6" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3s">
+            <div class="flex flex-col" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3t">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixsbn">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixsbm">£3,499</span>
+            </div>
+            <div class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground text-right leading-tight" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:olji3u">Complete Wedding<br />Package</div>
+          </div>
+          <div class="grid grid-cols-2 gap-4" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5q">
+            <a href="/venues/st-raphael-resort/" class="bg-accent text-white text-center py-4 rounded-lg text-sm font-bold no-underline hover:bg-accent-hover transition-colors" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:ew6586">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center py-4 hover:opacity-80 transition-opacity" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:ew6585">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Venue 3 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5r">
+        <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5s">
+          <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1612885488634-0a698136fed9?auto=format&w=800&q=80" alt="The Cypress Estate" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m3adqn" />
+          <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5t">Featured Venue</div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5u">
+            <WishlistButton 
+              client:load
+              venue={{
+                id: "cypress-estate",
+                name: "The Cypress Estate",
+                location: "Tuscany, Italy",
+                image: "https://images.unsplash.com/photo-1612885488634-0a698136fed9?auto=format&w=800&q=80",
+                priceFrom: "£4,200",
+                url: "/venues/st-raphael-resort/"
+              }} 
+              iconOnly={true} 
+            />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5v">
+          <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5r">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-muted-foreground m-0" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m041wf">Tuscany, Italy</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5s">
+              <div class="flex items-center gap-0.5" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5t">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5u"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5v"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5w"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5x"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5y">
+                  <div class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#00aa6c]" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5z"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixs9v">4.8</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:hjrffl">The Cypress Estate</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-6 flex-grow line-clamp-2" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:m041we">A historic Renaissance villa surrounded by rolling vineyards and ancient olive groves.</p>
+          <div class="flex items-center justify-between border-t border-border pt-6 mb-6" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5w">
+            <div class="flex flex-col" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5x">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixsbl">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:3ixsbk">£4,200</span>
+            </div>
+            <div class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground text-right leading-tight" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5y">Complete Wedding<br />Package</div>
+          </div>
+          <div class="grid grid-cols-2 gap-4" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:331x5z">
+            <a href="/venues/st-raphael-resort/" class="bg-secondary text-white text-center py-4 rounded-lg text-sm font-bold no-underline hover:bg-secondary-hover transition-colors" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:ew6584">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center py-4 hover:opacity-80 transition-opacity" data-ps="src/components/design-your-dream-wedding/DreamWeddingFeatured.astro:ew6583">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

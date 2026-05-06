@@ -1,0 +1,455 @@
+---
+// Featured Collection Section
+import { WishlistButton } from '@/components/wishlist/WishlistButton';
+---
+
+<section id="featured-collection" class="pt-10 pb-6 md:py-24 px-6 bg-background" data-ps="src/components/home/FeaturedCollection.astro:featured">
+  <div class="max-w-7xl mx-auto" data-ps="src/components/home/FeaturedCollection.astro:container">
+    <div class="text-center mb-8 md:mb-16 collection-header" data-ps="src/components/home/FeaturedCollection.astro:header">
+      <h2 class="text-[42px] font-bold font-serif text-secondary mb-4" data-ps="src/components/home/FeaturedCollection.astro:ut0pjk">The Featured Collection</h2>
+      <p class="text-muted-foreground max-w-2xl mx-auto" data-ps="src/components/home/FeaturedCollection.astro:r6zpfb">Our most exceptional venues, selected for their atmosphere and service.</p>
+    </div>
+
+    <div class="relative group" data-ps="src/components/home/FeaturedCollection.astro:slider-wrapper">
+      <div id="featured-slider" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none gap-4 md:gap-8 pb-2 md:pb-4 -mx-6 px-6 md:mx-0 md:px-0 scroll-px-6" data-ps="src/components/home/FeaturedCollection.astro:slider">
+        <!-- Venue 1 -->
+        <div class="min-w-full md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21.33px)] snap-start bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/home/FeaturedCollection.astro:venue-1">
+          <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/home/FeaturedCollection.astro:sf06ak">
+            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&w=800&q=80" alt="St Raphael Resort" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/home/FeaturedCollection.astro:pwr1z1" />
+            <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/home/FeaturedCollection.astro:sf06b6">Featured Venue</div>
+            <div class="absolute top-4 right-4 z-10" data-ps="src/components/home/FeaturedCollection.astro:4kycpi">
+              <WishlistButton 
+                client:load
+                venue={{
+                  id: "st-raphael-resort",
+                  name: "St Raphael Resort",
+                  location: "Limassol, Cyprus",
+                  image: "https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&w=800&q=80",
+                  priceFrom: "£2,995",
+                  url: "/venues/st-raphael-resort"
+                }} 
+                iconOnly={true} 
+              />
+            </div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow" data-ps="src/components/home/FeaturedCollection.astro:sf06b7">
+            <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/home/FeaturedCollection.astro:ajfqto">
+              <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/home/FeaturedCollection.astro:r6zpfc">Limassol • Beachfront Resort</p>
+              <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/home/FeaturedCollection.astro:5zdh7d">
+                <div class="flex items-center gap-0.5" data-ps="src/components/home/FeaturedCollection.astro:sf06b6">
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06b7"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06b8"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06b9"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06ba"></div>
+                  <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/home/FeaturedCollection.astro:sf06bb">
+                    <div class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06bc"></div>
+                  </div>
+                </div>
+                <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/home/FeaturedCollection.astro:rmqcjy">4.9</span>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/home/FeaturedCollection.astro:pjof7x">St. Raphael Resort</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow line-clamp-2" data-ps="src/components/home/FeaturedCollection.astro:r6zpfd">A luxurious 5-star resort set on Limassol's largest blue flag beach, offering breathtaking Mediterranean views.</p>
+            
+            <div class="flex items-end justify-between mb-6" data-ps="src/components/home/FeaturedCollection.astro:sf06b8">
+              <div class="flex flex-col" data-ps="src/components/home/FeaturedCollection.astro:sf06b9">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/home/FeaturedCollection.astro:rmqcln">From</span>
+                <span class="text-2xl font-bold text-secondary" data-ps="src/components/home/FeaturedCollection.astro:rmqclm">£2,995</span>
+              </div>
+              <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/home/FeaturedCollection.astro:sf06ba">Based on 30 guests</div>
+            </div>
+
+            <div class="flex flex-col gap-5" data-ps="src/components/home/FeaturedCollection.astro:sf06bb">
+              <a href="/venues/st-raphael-resort" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/home/FeaturedCollection.astro:yaxm46">View Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/home/FeaturedCollection.astro:yaxm47">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 2 -->
+        <div class="min-w-full md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21.33px)] snap-start bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/home/FeaturedCollection.astro:venue-2">
+          <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/home/FeaturedCollection.astro:sf06bc">
+            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1733776724083-f8ec367f04a9?auto=format&w=800&q=80" alt="Azure Waters Cliffside" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/home/FeaturedCollection.astro:pwr1z2" />
+            <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/home/FeaturedCollection.astro:sf06bd">Featured Venue</div>
+            <div class="absolute top-4 right-4 z-10" data-ps="src/components/home/FeaturedCollection.astro:4kycpj">
+              <WishlistButton 
+                client:load
+                venue={{
+                  id: "azure-waters",
+                  name: "Azure Waters Cliffside",
+                  location: "Santorini, Greece",
+                  image: "https://images.unsplash.com/photo-1733776724083-f8ec367f04a9?auto=format&w=800&q=80",
+                  priceFrom: "£3,499",
+                  url: "/venues/st-raphael-resort/"
+                }} 
+                iconOnly={true} 
+              />
+            </div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow" data-ps="src/components/home/FeaturedCollection.astro:sf06be">
+            <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/home/FeaturedCollection.astro:ajfqtn">
+              <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/home/FeaturedCollection.astro:r6zpfe">Santorini • Cliffside</p>
+              <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/home/FeaturedCollection.astro:5zdh7e">
+                <div class="flex items-center gap-0.5" data-ps="src/components/home/FeaturedCollection.astro:sf06bd">
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06be"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06bf"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtv"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtu"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtt"></div>
+                </div>
+                <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/home/FeaturedCollection.astro:rmqcjx">5.0</span>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/home/FeaturedCollection.astro:pjof7y">Azure Waters Cliffside</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow line-clamp-2" data-ps="src/components/home/FeaturedCollection.astro:r6zpff">An iconic caldera-view venue offering breathtaking sunset vistas and intimate luxury.</p>
+            
+            <div class="flex items-end justify-between mb-6" data-ps="src/components/home/FeaturedCollection.astro:sf06bf">
+              <div class="flex flex-col" data-ps="src/components/home/FeaturedCollection.astro:ajfqtv">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/home/FeaturedCollection.astro:rmqcl0">From</span>
+                <span class="text-2xl font-bold text-secondary" data-ps="src/components/home/FeaturedCollection.astro:rmqckz">£3,499</span>
+              </div>
+              <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/home/FeaturedCollection.astro:ajfqtu">Based on 20 guests</div>
+            </div>
+
+            <div class="flex flex-col gap-5" data-ps="src/components/home/FeaturedCollection.astro:ajfqtt">
+              <a href="/venues/st-raphael-resort/" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/home/FeaturedCollection.astro:yaxm48">View Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/home/FeaturedCollection.astro:yaxm49">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 3 -->
+        <div class="min-w-full md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21.33px)] snap-start bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift venue-card flex flex-col h-full" data-ps="src/components/home/FeaturedCollection.astro:venue-3">
+          <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/home/FeaturedCollection.astro:ajfqts">
+            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1612885488634-0a698136fed9?auto=format&w=800&q=80" alt="The Cypress Estate" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/home/FeaturedCollection.astro:pwr1z3" />
+            <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/home/FeaturedCollection.astro:ajfqtr">Featured Venue</div>
+            <div class="absolute top-4 right-4 z-10" data-ps="src/components/home/FeaturedCollection.astro:4kycq5">
+              <WishlistButton 
+                client:load
+                venue={{
+                  id: "cypress-estate",
+                  name: "The Cypress Estate",
+                  location: "Tuscany, Italy",
+                  image: "https://images.unsplash.com/photo-1612885488634-0a698136fed9?auto=format&w=800&q=80",
+                  priceFrom: "£4,200",
+                  url: "/venues/st-raphael-resort/"
+                }} 
+                iconOnly={true} 
+              />
+            </div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow" data-ps="src/components/home/FeaturedCollection.astro:ajfqtq">
+            <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/home/FeaturedCollection.astro:ajfqtm">
+              <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/home/FeaturedCollection.astro:r6zpg1">Tuscany • Historic Villa</p>
+              <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/home/FeaturedCollection.astro:5zdh7f">
+                <div class="flex items-center gap-0.5" data-ps="src/components/home/FeaturedCollection.astro:ajfqts">
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtr"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtq"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtp"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqto"></div>
+                  <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/home/FeaturedCollection.astro:ajfqtn">
+                    <div class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtm"></div>
+                  </div>
+                </div>
+                <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/home/FeaturedCollection.astro:rmqcjw">4.8</span>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/home/FeaturedCollection.astro:pjof7z">The Cypress Estate</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow line-clamp-2" data-ps="src/components/home/FeaturedCollection.astro:r6zpg2">A historic Renaissance villa surrounded by rolling vineyards and ancient olive groves.</p>
+            
+            <div class="flex items-end justify-between mb-6" data-ps="src/components/home/FeaturedCollection.astro:ajfqtp">
+              <div class="flex flex-col" data-ps="src/components/home/FeaturedCollection.astro:ajfqto">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/home/FeaturedCollection.astro:rmqcky">From</span>
+                <span class="text-2xl font-bold text-secondary" data-ps="src/components/home/FeaturedCollection.astro:rmqckx">£4,200</span>
+              </div>
+              <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/home/FeaturedCollection.astro:ajfqtn">Based on 40 guests</div>
+            </div>
+
+            <div class="flex flex-col gap-5" data-ps="src/components/home/FeaturedCollection.astro:ajfqtm">
+              <a href="/venues/st-raphael-resort/" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/home/FeaturedCollection.astro:yaxm50">View Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/home/FeaturedCollection.astro:yaxm4b">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 4 (Placeholder) -->
+        <div class="min-w-full md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21.33px)] snap-start bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/home/FeaturedCollection.astro:venue-4">
+          <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/home/FeaturedCollection.astro:sf06ae">
+            <img src="https://images.pexels.com/photos/34189625/pexels-photo-34189625.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Infinity Horizon Bay" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/home/FeaturedCollection.astro:pwr1yv" />
+            <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/home/FeaturedCollection.astro:sf06af">Featured Venue</div>
+            <div class="absolute top-4 right-4 z-10" data-ps="src/components/home/FeaturedCollection.astro:sf06ag">
+              <WishlistButton 
+                client:load
+                venue={{
+                  id: "infinity-horizon",
+                  name: "Infinity Horizon Bay",
+                  location: "Phuket, Thailand",
+                  image: "https://images.pexels.com/photos/34189625/pexels-photo-34189625.jpeg?auto=compress&cs=tinysrgb&w=800",
+                  priceFrom: "£4,850",
+                  url: "/venues/st-raphael-resort/"
+                  }} 
+                  iconOnly={true} 
+                  />
+                  </div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow" data-ps="src/components/home/FeaturedCollection.astro:sf06ah">
+            <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/home/FeaturedCollection.astro:sf06ai">
+              <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/home/FeaturedCollection.astro:r6zpf7">Phuket • Modern Luxury</p>
+              <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/home/FeaturedCollection.astro:sf06ai">
+                <div class="flex items-center gap-0.5" data-ps="src/components/home/FeaturedCollection.astro:sf06aj">
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06ak"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06b6"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06b7"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06b8"></div>
+                  <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/home/FeaturedCollection.astro:sf06b9">
+                    <div class="absolute top-0 left-0 bottom-0 w-[90%] bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06ba"></div>
+                  </div>
+                </div>
+                <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/home/FeaturedCollection.astro:rmqck1">4.9</span>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/home/FeaturedCollection.astro:pjof77">Infinity Horizon Bay</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow line-clamp-2" data-ps="src/components/home/FeaturedCollection.astro:r6zpf8">A contemporary masterpiece perched above the Andaman Sea with stunning sunset panoramas.</p>
+            <div class="flex items-end justify-between mb-6" data-ps="src/components/home/FeaturedCollection.astro:sf06aj">
+              <div class="flex flex-col" data-ps="src/components/home/FeaturedCollection.astro:sf06ak">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/home/FeaturedCollection.astro:rmqcls">From</span>
+                <span class="text-2xl font-bold text-secondary" data-ps="src/components/home/FeaturedCollection.astro:rmqclr">£4,850</span>
+              </div>
+              <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/home/FeaturedCollection.astro:sf06b6">Based on 50 guests</div>
+            </div>
+            <div class="flex flex-col gap-5" data-ps="src/components/home/FeaturedCollection.astro:sf06b7">
+              <a href="/venues/st-raphael-resort/" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/home/FeaturedCollection.astro:yaxm3g">View Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/home/FeaturedCollection.astro:yaxm3h">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 5 (Placeholder) -->
+        <div class="min-w-full md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21.33px)] snap-start bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/home/FeaturedCollection.astro:venue-5">
+          <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/home/FeaturedCollection.astro:sf06b8">
+            <img src="https://images.pexels.com/photos/34241946/pexels-photo-34241946.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Coral Sands Resort" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/home/FeaturedCollection.astro:pwr1yw" />
+            <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/home/FeaturedCollection.astro:sf06b9">Featured Venue</div>
+            <div class="absolute top-4 right-4 z-10" data-ps="src/components/home/FeaturedCollection.astro:sf06ba">
+              <WishlistButton 
+                client:load
+                venue={{
+                  id: "coral-sands",
+                  name: "Coral Sands Resort",
+                  location: "Ayia Napa, Cyprus",
+                  image: "https://images.pexels.com/photos/34241946/pexels-photo-34241946.jpeg?auto=compress&cs=tinysrgb&w=800",
+                  priceFrom: "£2,495",
+                  url: "/venues/st-raphael-resort/"
+                  }} 
+                  iconOnly={true} 
+                  />
+                  </div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow" data-ps="src/components/home/FeaturedCollection.astro:sf06bb">
+            <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/home/FeaturedCollection.astro:sf06bc">
+              <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/home/FeaturedCollection.astro:r6zpf9">Ayia Napa • Beachfront</p>
+              <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/home/FeaturedCollection.astro:sf06bb">
+                <div class="flex items-center gap-0.5" data-ps="src/components/home/FeaturedCollection.astro:sf06bc">
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06bd"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06be"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:sf06bf"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtv"></div>
+                  <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/home/FeaturedCollection.astro:ajfqtu">
+                    <div class="absolute top-0 left-0 bottom-0 w-[70%] bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtt"></div>
+                  </div>
+                </div>
+                <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/home/FeaturedCollection.astro:rmqck0">4.7</span>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/home/FeaturedCollection.astro:pjof78">Coral Sands Resort</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow line-clamp-2" data-ps="src/components/home/FeaturedCollection.astro:r6zpfa">Pristine white sands and turquoise waters provide the perfect backdrop for your Mediterranean vows.</p>
+            <div class="flex items-end justify-between mb-6" data-ps="src/components/home/FeaturedCollection.astro:sf06bd">
+              <div class="flex flex-col" data-ps="src/components/home/FeaturedCollection.astro:sf06be">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/home/FeaturedCollection.astro:rmqclp">From</span>
+                <span class="text-2xl font-bold text-secondary" data-ps="src/components/home/FeaturedCollection.astro:rmqclo">£2,495</span>
+              </div>
+              <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/home/FeaturedCollection.astro:sf06bf">Based on 30 guests</div>
+            </div>
+            <div class="flex flex-col gap-5" data-ps="src/components/home/FeaturedCollection.astro:ajfqtv">
+              <a href="/venues/st-raphael-resort/" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/home/FeaturedCollection.astro:yaxm3i">View Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/home/FeaturedCollection.astro:yaxm3j">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 6 (Placeholder) -->
+        <div class="min-w-full md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-21.33px)] snap-start bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/home/FeaturedCollection.astro:venue-6">
+          <div class="relative aspect-video overflow-hidden shrink-0" data-ps="src/components/home/FeaturedCollection.astro:ajfqtu">
+            <img src="https://images.pexels.com/photos/32791578/pexels-photo-32791578.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Olympian Castle Gardens" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/home/FeaturedCollection.astro:pwr1yx" />
+            <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-secondary" data-ps="src/components/home/FeaturedCollection.astro:ajfqtt">Featured Venue</div>
+            <div class="absolute top-4 right-4 z-10" data-ps="src/components/home/FeaturedCollection.astro:ajfqts">
+              <WishlistButton 
+                client:load
+                venue={{
+                  id: "olympian-castle",
+                  name: "Olympian Castle Gardens",
+                  location: "Rhodes, Greece",
+                  image: "https://images.pexels.com/photos/32791578/pexels-photo-32791578.jpeg?auto=compress&cs=tinysrgb&w=800",
+                  priceFrom: "£3,800",
+                  url: "/venues/st-raphael-resort/"
+                }} 
+                iconOnly={true} 
+              />
+            </div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow" data-ps="src/components/home/FeaturedCollection.astro:ajfqtr">
+            <div class="flex flex-col items-start gap-2 mb-4" data-ps="src/components/home/FeaturedCollection.astro:ajfqtq">
+              <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/home/FeaturedCollection.astro:r6zpfb">Rhodes • Historic Estate</p>
+              <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border/50" data-ps="src/components/home/FeaturedCollection.astro:ajfqts">
+                <div class="flex items-center gap-0.5" data-ps="src/components/home/FeaturedCollection.astro:ajfqtr">
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtq"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtp"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqto"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtn"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/home/FeaturedCollection.astro:ajfqtm"></div>
+                </div>
+                <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/home/FeaturedCollection.astro:rmqcjz">5.0</span>
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/home/FeaturedCollection.astro:pjof79">Olympian Castle Gardens</h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow line-clamp-2" data-ps="src/components/home/FeaturedCollection.astro:r6zpfc">Step back in time at this majestic medieval estate featuring secret gardens and ancient stone walls.</p>
+            <div class="flex items-end justify-between mb-6" data-ps="src/components/home/FeaturedCollection.astro:ajfqtp">
+              <div class="flex flex-col" data-ps="src/components/home/FeaturedCollection.astro:ajfqto">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/home/FeaturedCollection.astro:rmqclm">From</span>
+                <span class="text-2xl font-bold text-secondary" data-ps="src/components/home/FeaturedCollection.astro:rmqcl0">£3,800</span>
+              </div>
+              <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/home/FeaturedCollection.astro:ajfqtn">Based on 40 guests</div>
+            </div>
+            <div class="flex flex-col gap-5" data-ps="src/components/home/FeaturedCollection.astro:ajfqtm">
+              <a href="/venues/st-raphael-resort/" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/home/FeaturedCollection.astro:yaxm45">View Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/home/FeaturedCollection.astro:yaxm46">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Navigation -->
+      <div class="absolute inset-y-0 left-0 flex items-center -ml-4 md:-ml-6 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" data-ps="src/components/home/FeaturedCollection.astro:nav-left">
+        <button id="slider-prev" class="w-10 h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg text-secondary transition-all pointer-events-auto active:scale-95" aria-label="Previous venues" data-ps="src/components/home/FeaturedCollection.astro:4kycpf">
+          <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+        </button>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center -mr-4 md:-mr-6 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" data-ps="src/components/home/FeaturedCollection.astro:nav-right">
+        <button id="slider-next" class="w-10 h-10 md:w-12 md:h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg text-secondary transition-all pointer-events-auto active:scale-95" aria-label="Next venues" data-ps="src/components/home/FeaturedCollection.astro:4kycs1">
+          <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 md:mt-12 collection-footer" data-ps="src/components/home/FeaturedCollection.astro:footer">
+      <a href="/featured-venue-collection/" class="browse-link text-[11px] font-bold uppercase tracking-[2px] text-foreground no-underline flex items-center justify-center gap-2 hover:text-primary transition-colors" data-ps="src/components/home/FeaturedCollection.astro:yaxm4c">
+        VIEW ALL FEATURED VENUES <span data-ps="src/components/home/FeaturedCollection.astro:rmqckw">→</span>
+      </a>
+      <button id="expand-featured" class="hidden mx-auto bg-primary text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors shadow-lg" data-ps="src/components/home/FeaturedCollection.astro:expand-btn">
+        View All Featured Venues
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Grid layout for expanded state */
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    overflow-x: visible !important;
+  }
+
+  @media (min-width: 768px) {
+    .collection-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .collection-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .collection-grid .venue-card {
+    min-width: 0 !important;
+  }
+</style>
+
+<script>
+  function initSlider() {
+    const slider = document.getElementById('featured-slider');
+    const prevBtn = document.getElementById('slider-prev');
+    const nextBtn = document.getElementById('slider-next');
+
+    if (!slider || !prevBtn || !nextBtn) return;
+
+    const scrollAmount = () => {
+      if (window.innerWidth >= 1024) return slider.clientWidth / 3;
+      if (window.innerWidth >= 768) return slider.clientWidth / 2;
+      return slider.clientWidth;
+    };
+
+    prevBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+    });
+
+    nextBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+    });
+
+    // Auto-hide arrows at boundaries
+    slider.addEventListener('scroll', () => {
+      const isAtStart = slider.scrollLeft <= 5;
+      const isAtEnd = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 5;
+      
+      prevBtn.parentElement?.classList.toggle('opacity-0', isAtStart);
+      prevBtn.parentElement?.classList.toggle('pointer-events-none', isAtStart);
+      nextBtn.parentElement?.classList.toggle('opacity-0', isAtEnd);
+      nextBtn.parentElement?.classList.toggle('pointer-events-none', isAtEnd);
+    });
+
+    // Trigger initial check
+    slider.dispatchEvent(new Event('scroll'));
+  }
+
+  // Expand function for the collection page
+  function initExpand() {
+    if (window.location.pathname.includes('/featured-venue-collection/')) {
+      const slider = document.getElementById('featured-slider');
+      const expandBtn = document.getElementById('expand-featured');
+      const browseLink = document.querySelector('.browse-link');
+      const header = document.querySelector('.collection-header');
+      const navLeft = document.querySelector('[data-ps*="nav-left"]');
+      const navRight = document.querySelector('[data-ps*="nav-right"]');
+
+      if (expandBtn) expandBtn.classList.remove('hidden');
+      if (browseLink) browseLink.classList.add('hidden');
+      if (header) header.classList.add('hidden');
+
+      expandBtn?.addEventListener('click', () => {
+        slider?.classList.add('collection-grid');
+        expandBtn.classList.add('hidden');
+        if (navLeft) navLeft.style.display = 'none';
+        if (navRight) navRight.style.display = 'none';
+      });
+    }
+  }
+
+  // Init on load and after swaps
+  initSlider();
+  initExpand();
+  document.addEventListener('astro:after-swap', () => {
+    initSlider();
+    initExpand();
+  });
+</script>

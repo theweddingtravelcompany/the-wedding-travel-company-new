@@ -1,0 +1,209 @@
+[
+  {
+    "url": "https://cdn.pagesmith.app/4604757a/images/wedding-travel-co-full-logo-full-colour-rgb.svg",
+    "altText": "The Wedding Travel Company",
+    "context": "Destinations",
+    "isLogo": true,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1755795652039-c95221cc55fa?auto=format&w=1200&q=80",
+    "altText": "Romantic destination wedding",
+    "context": "Section: Secondary | Award-winning destination wedding specialists trusted by thousands of couples each year.",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&w=800&q=80",
+    "altText": "St Raphael Resort",
+    "context": "Section: The Featured Collection | Featured Venue",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1733776724083-f8ec367f04a9?auto=format&w=800&q=80",
+    "altText": "Azure Waters Cliffside",
+    "context": "Section: St Raphael Resort | Featured Venue",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1612885488634-0a698136fed9?auto=format&w=800&q=80",
+    "altText": "The Cypress Estate",
+    "context": "Section: Azure Waters Cliffside | Featured Venue",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1761047726499-f5a50b9fe003?auto=format&w=800&q=80",
+    "altText": "Greece",
+    "context": "Section: European Destinations | From £3,499",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1762872502140-0026fe0c8f33?auto=format&w=800&q=80",
+    "altText": "Spain",
+    "context": "Section: Italy | From £2,950",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1543731068-7e0f5beff43a?auto=format&w=800&q=80",
+    "altText": "Cyprus",
+    "context": "Section: Spain | From £2,850",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1762177446992-4cac5b44a05d?auto=format&w=800&q=80",
+    "altText": "Mexico",
+    "context": "Section: Long-Haul Paradise | From £5,500",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1620440899483-87b87322589b?auto=format&w=800&q=80",
+    "altText": "Caribbean",
+    "context": "Section: Mexico | From £6,200",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1588504633950-9dc518941e93?auto=format&w=800&q=80",
+    "altText": "Thailand",
+    "context": "Section: Caribbean | From £4,800",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&w=800&q=80",
+    "altText": "Mauritius",
+    "context": "Section: Thailand | From £5,900",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1755795652039-c95221cc55fa?auto=format&amp;w=1200&amp;q=80",
+    "altText": "Romantic destination wedding",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&amp;w=800&amp;q=80",
+    "altText": "St Raphael Resort",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1733776724083-f8ec367f04a9?auto=format&amp;w=800&amp;q=80",
+    "altText": "Azure Waters Cliffside",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1612885488634-0a698136fed9?auto=format&amp;w=800&amp;q=80",
+    "altText": "The Cypress Estate",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1761047726499-f5a50b9fe003?auto=format&amp;w=800&amp;q=80",
+    "altText": "Greece",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1762872502140-0026fe0c8f33?auto=format&amp;w=800&amp;q=80",
+    "altText": "Spain",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1543731068-7e0f5beff43a?auto=format&amp;w=800&amp;q=80",
+    "altText": "Cyprus",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1762177446992-4cac5b44a05d?auto=format&amp;w=800&amp;q=80",
+    "altText": "Mexico",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1620440899483-87b87322589b?auto=format&amp;w=800&amp;q=80",
+    "altText": "Caribbean",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1588504633950-9dc518941e93?auto=format&amp;w=800&amp;q=80",
+    "altText": "Thailand",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&amp;w=800&amp;q=80",
+    "altText": "Mauritius",
+    "context": "Extracted from HTML",
+    "isLogo": false,
+    "originalWidth": 0,
+    "originalHeight": 0,
+    "variants": []
+  }
+]

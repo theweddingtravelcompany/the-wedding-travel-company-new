@@ -1,0 +1,27 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { WishlistContent } from '@/components/wishlist/WishlistContent';
+---
+
+<BaseLayout 
+  title="Your Wishlist | The Wedding Travel Company" 
+  description="Review your favourite venues and send us an enquiry to get started."
+>
+  <div class="relative pt-32 pb-12 md:pt-40 md:pb-20 bg-stone-50" data-ps="src/pages/wishlist.astro:8in6kl">
+    <div class="absolute inset-0 z-0 opacity-5 pointer-events-none overflow-hidden" data-ps="src/pages/wishlist.astro:8in6km">
+      <div class="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-[#A81E82] to-transparent" data-ps="src/pages/wishlist.astro:8in6kn"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10" data-ps="src/pages/wishlist.astro:8in6ko">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-ps="src/pages/wishlist.astro:8in6kp">
+        <span class="text-[#A81E82] font-bold text-xs uppercase tracking-[0.2em] mb-4 block" data-ps="src/pages/wishlist.astro:5fj5jq">Plan Your Dream Wedding</span>
+        <h1 class="text-4xl md:text-5xl font-serif text-[#1F2A44] mb-6" data-ps="src/pages/wishlist.astro:wrdtn0">Your Shortlist</h1>
+        <p class="text-stone-600 text-lg leading-relaxed" data-ps="src/pages/wishlist.astro:vrpd6t">
+          Review your favourite venues and send us an enquiry to get started. Our wedding specialists are ready to help you plan every detail.
+        </p>
+      </div>
+
+      <WishlistContent client:load />
+    </div>
+  </div>
+</BaseLayout>

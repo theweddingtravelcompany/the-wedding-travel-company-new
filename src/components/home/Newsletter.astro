@@ -1,0 +1,33 @@
+---
+// Newsletter Section
+---
+
+<section id="newsletter" class="pb-12 md:pb-24 px-6 bg-background" data-ps="src/components/home/Newsletter.astro:newsletter">
+  <div class="max-w-7xl mx-auto" data-ps="src/components/home/Newsletter.astro:container">
+    <div class="bg-secondary text-white rounded-[32px] md:rounded-[48px] p-8 md:p-20 flex flex-col lg:flex-row items-center justify-between gap-8 md:gap-12 overflow-hidden relative shadow-2xl" data-ps="src/components/home/Newsletter.astro:box">
+      <!-- Accent Circles -->
+      <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" data-ps="src/components/home/Newsletter.astro:b8a5so"></div>
+      <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" data-ps="src/components/home/Newsletter.astro:b8a5sn"></div>
+
+      <div class="text-center lg:text-left relative z-10 flex-1" data-ps="src/components/home/Newsletter.astro:content">
+        <h2 class="text-[42px] font-bold font-serif text-white mb-4 leading-tight" data-ps="src/components/home/Newsletter.astro:rjav4f">
+          Get Exclusive <br />
+          <span class="text-secondary-foreground italic font-normal" data-ps="src/components/home/Newsletter.astro:hyjq2b">Inspiration</span>
+        </h2>
+        <p class="text-secondary-foreground max-w-md" data-ps="src/components/home/Newsletter.astro:gncrfc">Sign up for destination guides, venue highlights and special offers.</p>
+      </div>
+
+      <form class="flex flex-col sm:flex-row gap-4 w-full max-w-lg relative z-10" data-ps="src/components/home/Newsletter.astro:form">
+        <input 
+          type="email" 
+          placeholder="Your email address" 
+          class="flex-1 bg-white/10 border border-white/20 rounded-xl px-6 py-5 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+          required
+        />
+        <button type="submit" class="bg-primary text-white px-10 py-5 rounded-xl font-bold uppercase tracking-widest text-[14px] hover:bg-primary-hover transition-colors shadow-lg shadow-primary/20 whitespace-nowrap" data-ps="src/components/home/Newsletter.astro:hjrtys">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

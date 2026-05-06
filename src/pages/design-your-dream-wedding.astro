@@ -1,0 +1,63 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import DreamWeddingHero from '@/components/design-your-dream-wedding/DreamWeddingHero.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import DreamWeddingVenues from '@/components/design-your-dream-wedding/DreamWeddingVenues.astro';
+import DreamWeddingFaq from '@/components/design-your-dream-wedding/DreamWeddingFaq.astro';
+import DreamWeddingCta from '@/components/design-your-dream-wedding/DreamWeddingCta.astro';
+---
+
+<BaseLayout title="Design Your Dream Wedding | The Wedding Travel Company" description="Curated weddings in paradise. Tell us the vibe you want — we'll match you with beautiful wedding venues across our destinations.">
+  <DreamWeddingHero />
+  
+  <section class="py-16 px-6 bg-background" data-ps="src/pages/design-your-dream-wedding.astro:kcxjf9">
+    <div class="max-w-7xl mx-auto" data-ps="src/pages/design-your-dream-wedding.astro:8fjqc4">
+      <div class="text-center mb-12" data-ps="src/pages/design-your-dream-wedding.astro:8fjqc5">
+        <h2 class="text-[42px] font-bold font-serif text-secondary mb-4" data-ps="src/pages/design-your-dream-wedding.astro:bow51i">Search your dream wedding venue</h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto bg-surface rounded-2xl p-8" data-ps="src/pages/design-your-dream-wedding.astro:8fjqc6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6" data-ps="src/pages/design-your-dream-wedding.astro:8fjqc7">
+          <div data-ps="src/pages/design-your-dream-wedding.astro:8fjqc8">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground block mb-2" data-ps="src/pages/design-your-dream-wedding.astro:tugoqv">Destination</label>
+            <select class="w-full border border-border bg-white rounded-lg px-4 py-3 text-sm appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23737373%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M19%209l-7%207-7-7%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25em_1.25em] bg-[right_1rem_center] bg-no-repeat focus:outline-none focus:ring-1 focus:ring-primary">
+              <option>Any Destination</option>
+              <option>Cyprus</option>
+              <option>Greece</option>
+              <option>Italy</option>
+              <option>Mexico</option>
+              <option>Spain</option>
+              <option>Caribbean</option>
+            </select>
+          </div>
+          <div data-ps="src/pages/design-your-dream-wedding.astro:8fjqc9">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground block mb-2" data-ps="src/pages/design-your-dream-wedding.astro:tugoqu">Max Budget</label>
+            <select class="w-full border border-border bg-white rounded-lg px-4 py-3 text-sm appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23737373%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M19%209l-7%207-7-7%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25em_1.25em] bg-[right_1rem_center] bg-no-repeat focus:outline-none focus:ring-1 focus:ring-primary">
+              <option>No Limit</option>
+              <option>Up to £5,000</option>
+              <option>Up to £10,000</option>
+            </select>
+          </div>
+          <div data-ps="src/pages/design-your-dream-wedding.astro:8fjqca">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground block mb-2" data-ps="src/pages/design-your-dream-wedding.astro:tugoqt">Guests</label>
+            <select class="w-full border border-border bg-white rounded-lg px-4 py-3 text-sm appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23737373%22%3E%3Cpath%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M19%209l-7%207-7-7%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25em_1.25em] bg-[right_1rem_center] bg-no-repeat focus:outline-none focus:ring-1 focus:ring-primary">
+              <option>Any Size</option>
+              <option>Up to 50</option>
+              <option>100+</option>
+            </select>
+          </div>
+          <div class="flex items-end" data-ps="src/pages/design-your-dream-wedding.astro:8fjqcb">
+            <a href="/wedding-search/" class="w-full text-center bg-primary text-white py-3 rounded-lg font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors inline-block no-underline" data-ps="src/pages/design-your-dream-wedding.astro:jx9xwq">
+              Search
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FeaturedCollection />
+  <DreamWeddingVenues />
+  <DreamWeddingFaq />
+  <DreamWeddingCta />
+</BaseLayout>

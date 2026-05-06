@@ -1,0 +1,52 @@
+---
+import { ChevronRight } from 'lucide-react';
+
+const { pathname } = Astro.url;
+const segments = pathname.split('/').filter(Boolean);
+
+// Define display names for paths
+const pathDisplayNames: Record<string, string> = {
+  'destinations': 'Wedding Destinations',
+  'all-destinations': 'All Destinations',
+  'wedding-type': 'Wedding Types',
+  'design-your-dream-wedding': 'Design Your Wedding',
+  'venues': 'Wedding Venues',
+};
+
+const breadcrumbs = segments.map((segment, index) => {
+  const url = `/${segments.slice(0, index + 1).join('/')}/`;
+  const name = pathDisplayNames[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  return { name, url };
+});
+---
+
+{pathname !== '/' && (
+  <nav class="bg-[#F5F5F5] py-1.5 md:py-2.5 border-b border-gray-100/80" data-ps="src/components/Breadcrumbs.astro:breadcrumbs">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 overflow-x-auto whitespace-nowrap scrollbar-hide" data-ps="src/components/Breadcrumbs.astro:jrus99">
+      <div class="flex items-center space-x-1 md:space-x-2 text-[9px] md:text-xs text-[#666666] font-medium uppercase tracking-wider py-0.5" data-ps="src/components/Breadcrumbs.astro:jrus98">
+        <a href="/" class="hover:text-[var(--accent)] transition-colors" data-ps="src/components/Breadcrumbs.astro:7n8f3d">Home</a>
+        
+        {breadcrumbs.map((crumb, index) => (
+          <>
+            <ChevronRight size={12} class="md:w-[14px] md:h-[14px] opacity-50" />
+            {index === breadcrumbs.length - 1 ? (
+              <span class="font-medium text-[var(--primary)]" data-ps="src/components/Breadcrumbs.astro:crumb-last">{crumb.name}</span>
+            ) : (
+              <a href={crumb.url} class="hover:text-[var(--accent)] transition-colors" data-ps="src/components/Breadcrumbs.astro:crumb-link">{crumb.name}</a>
+            )}
+          </>
+        ))}
+      </div>
+    </div>
+  </nav>
+)}
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>

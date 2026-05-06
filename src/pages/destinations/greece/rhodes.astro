@@ -1,0 +1,28 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import RhodesHero from '@/components/destinations/rhodes/RhodesHero.astro';
+import RhodesVenues from '@/components/destinations/rhodes/RhodesVenues.astro';
+import RhodesStyles from '@/components/destinations/rhodes/RhodesStyles.astro';
+import CyprusFaq from '@/components/destinations/cyprus/CyprusFaq.astro';
+import CyprusCta from '@/components/destinations/cyprus/CyprusCta.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+---
+
+<BaseLayout 
+  title="Weddings in Rhodes | The Wedding Travel Company" 
+  description="Explore our hand-picked selection of wedding venues in Rhodes, Greece."
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Weddings in Rhodes",
+    "description": "Explore our hand-picked selection of wedding venues in Rhodes, Greece.",
+    "url": "https://twtc-site.pagesmith.app/destinations/greece/rhodes/"
+  }}
+>
+  <RhodesHero />
+  <RhodesVenues />
+  <RhodesStyles />
+  <CyprusFaq />
+  <FeaturedCollection />
+  <CyprusCta />
+</BaseLayout>

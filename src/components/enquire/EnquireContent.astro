@@ -1,0 +1,152 @@
+---
+import { SITE } from '@/config/site';
+---
+
+<div data-ps="src/components/enquire/EnquireContent.astro:wrap" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16" data-ps="src/components/enquire/EnquireContent.astro:vwsmze">
+    
+    <!-- Main Form Area -->
+    <div class="lg:col-span-2" data-ps="src/components/enquire/EnquireContent.astro:vwsmzd">
+      <div class="mb-10" data-ps="src/components/enquire/EnquireContent.astro:vwsmyr">
+        <h1 class="text-4xl md:text-5xl font-bold font-heading text-primary mb-4" data-ps="src/components/enquire/EnquireContent.astro:ehnxib">Start Planning Your Dream Wedding</h1>
+        <p class="text-lg text-text-muted" data-ps="src/components/enquire/EnquireContent.astro:ligz40">Fill out the form below and one of our expert wedding consultants will be in touch to help you design your perfect day.</p>
+      </div>
+
+      <form class="space-y-10" onsubmit="event.preventDefault(); alert('Enquiry submitted successfully!');">
+        
+        <!-- Step 1: Destination -->
+        <div class="space-y-4" data-ps="src/components/enquire/EnquireContent.astro:vwsmyq">
+          <h2 class="text-xl font-bold text-primary border-b border-border pb-2" data-ps="src/components/enquire/EnquireContent.astro:t62upz">1. Where are you dreaming of?</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3" data-ps="src/components/enquire/EnquireContent.astro:vwsmyp">
+            {['Cyprus', 'Greece', 'Italy', 'Mexico', 'Caribbean', 'Not Sure Yet'].map(dest => (
+              <label class="cursor-pointer" data-ps="src/components/enquire/EnquireContent.astro:ai112i">
+                <input type="radio" name="destination" value={dest} class="peer sr-only" />
+                <div class="px-4 py-3 rounded-xl border-2 border-border text-center hover:border-accent hover:bg-accent/5 peer-checked:border-accent peer-checked:bg-accent peer-checked:text-white transition-all duration-200 font-medium text-sm" data-ps="src/components/enquire/EnquireContent.astro:vwsmyo">
+                  {dest}
+                </div>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <!-- Step 2: Date -->
+        <div class="space-y-4" data-ps="src/components/enquire/EnquireContent.astro:vwsmyn">
+          <h2 class="text-xl font-bold text-primary border-b border-border pb-2" data-ps="src/components/enquire/EnquireContent.astro:t62upy">2. When are you planning to go?</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3" data-ps="src/components/enquire/EnquireContent.astro:vwsmym">
+            {['2024', '2025', '2026', '2027+'].map(year => (
+              <label class="cursor-pointer" data-ps="src/components/enquire/EnquireContent.astro:ai112j">
+                <input type="radio" name="year" value={year} class="peer sr-only" />
+                <div class="px-4 py-3 rounded-xl border-2 border-border text-center hover:border-accent hover:bg-accent/5 peer-checked:border-accent peer-checked:bg-accent peer-checked:text-white transition-all duration-200 font-medium text-sm" data-ps="src/components/enquire/EnquireContent.astro:vwsmyl">
+                  {year}
+                </div>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <!-- Step 3: Guests -->
+        <div class="space-y-4" data-ps="src/components/enquire/EnquireContent.astro:vwsmyk">
+          <h2 class="text-xl font-bold text-primary border-b border-border pb-2" data-ps="src/components/enquire/EnquireContent.astro:t62upx">3. Estimated number of guests</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3" data-ps="src/components/enquire/EnquireContent.astro:vwsmyj">
+            {['Just the two of us', '1-20', '21-50', '50+'].map(guests => (
+              <label class="cursor-pointer" data-ps="src/components/enquire/EnquireContent.astro:ai112k">
+                <input type="radio" name="guests" value={guests} class="peer sr-only" />
+                <div class="px-4 py-3 rounded-xl border-2 border-border text-center hover:border-accent hover:bg-accent/5 peer-checked:border-accent peer-checked:bg-accent peer-checked:text-white transition-all duration-200 font-medium text-sm" data-ps="src/components/enquire/EnquireContent.astro:vwsmyi">
+                  {guests}
+                </div>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <!-- Step 4: Personal Details -->
+        <div class="space-y-4" data-ps="src/components/enquire/EnquireContent.astro:vwsmxw">
+          <h2 class="text-xl font-bold text-primary border-b border-border pb-2" data-ps="src/components/enquire/EnquireContent.astro:t62upw">4. Your Details</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-ps="src/components/enquire/EnquireContent.astro:vwsmxv">
+            <div class="space-y-2" data-ps="src/components/enquire/EnquireContent.astro:vwsmxu">
+              <label for="firstName" class="block text-sm font-medium text-text" data-ps="src/components/enquire/EnquireContent.astro:ai112l">First Name *</label>
+              <input type="text" id="firstName" required class="w-full px-4 py-3 rounded-xl border border-border focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="Jane" />
+            </div>
+            <div class="space-y-2" data-ps="src/components/enquire/EnquireContent.astro:vwsmxt">
+              <label for="lastName" class="block text-sm font-medium text-text" data-ps="src/components/enquire/EnquireContent.astro:ai112m">Last Name *</label>
+              <input type="text" id="lastName" required class="w-full px-4 py-3 rounded-xl border border-border focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="Doe" />
+            </div>
+            <div class="space-y-2" data-ps="src/components/enquire/EnquireContent.astro:vwsmxs">
+              <label for="email" class="block text-sm font-medium text-text" data-ps="src/components/enquire/EnquireContent.astro:ai112n">Email Address *</label>
+              <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl border border-border focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="jane@example.com" />
+            </div>
+            <div class="space-y-2" data-ps="src/components/enquire/EnquireContent.astro:vwsmxr">
+              <label for="phone" class="block text-sm font-medium text-text" data-ps="src/components/enquire/EnquireContent.astro:ai1139">Phone Number *</label>
+              <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-xl border border-border focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="07123 456789" />
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6" data-ps="src/components/enquire/EnquireContent.astro:vwsmxq">
+          <button type="submit" class="w-full md:w-auto bg-accent hover:bg-accent-hover text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 text-lg flex items-center justify-center gap-2" data-ps="src/components/enquire/EnquireContent.astro:ge3xyg">
+            Send Enquiry
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <p class="text-sm text-text-muted mt-4 flex items-center gap-2" data-ps="src/components/enquire/EnquireContent.astro:ligz3z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-green"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            Your information is 100% secure. We will never share your details.
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <!-- Sticky Sidebar - Trust Signals -->
+    <div class="lg:col-span-1" data-ps="src/components/enquire/EnquireContent.astro:vwsmxp">
+      <div class="sticky top-32 space-y-6" data-ps="src/components/enquire/EnquireContent.astro:vwsmxo">
+        
+        <!-- Trustpilot -->
+        <div class="bg-surface rounded-2xl p-6 border border-border" data-ps="src/components/enquire/EnquireContent.astro:vwsmxn">
+          <div class="flex items-center gap-2 mb-4" data-ps="src/components/enquire/EnquireContent.astro:ute8jh">
+            <div class="flex text-[#00b67a]" data-ps="src/components/enquire/EnquireContent.astro:ute8jg">
+              {[1, 2, 3, 4, 5].map(() => (
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              ))}
+            </div>
+          </div>
+          <h3 class="font-bold text-primary mb-2" data-ps="src/components/enquire/EnquireContent.astro:r6ma0w">"Absolutely flawless experience"</h3>
+          <p class="text-sm text-text-muted mb-4" data-ps="src/components/enquire/EnquireContent.astro:ligz3y">"The Wedding Travel Company took care of everything. Our Cyprus wedding was beyond our wildest dreams!"</p>
+          <div class="text-xs font-bold text-text" data-ps="src/components/enquire/EnquireContent.astro:ute8jf">Sarah & James • Rated 4.9/5</div>
+        </div>
+
+        <!-- ATOL Protected -->
+        <div class="bg-white rounded-2xl p-6 border border-border shadow-sm flex items-center gap-4" data-ps="src/components/enquire/EnquireContent.astro:ute8je">
+          <div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center flex-shrink-0" data-ps="src/components/enquire/EnquireContent.astro:ute8jd">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div data-ps="src/components/enquire/EnquireContent.astro:ute8jc">
+            <h3 class="font-bold text-primary" data-ps="src/components/enquire/EnquireContent.astro:r6ma1i">100% Financial Protection</h3>
+            <p class="text-sm text-text-muted" data-ps="src/components/enquire/EnquireContent.astro:ligz3x">ABTA & ATOL Protected</p>
+          </div>
+        </div>
+
+        <!-- Award Winning -->
+        <div class="bg-white rounded-2xl p-6 border border-border shadow-sm flex items-center gap-4" data-ps="src/components/enquire/EnquireContent.astro:ute8jb">
+          <div class="w-16 h-16 bg-surface rounded-full flex items-center justify-center flex-shrink-0" data-ps="src/components/enquire/EnquireContent.astro:ute8ja">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div data-ps="src/components/enquire/EnquireContent.astro:ute8j9">
+            <h3 class="font-bold text-primary" data-ps="src/components/enquire/EnquireContent.astro:r6ma1j">Award Winning</h3>
+            <p class="text-sm text-text-muted" data-ps="src/components/enquire/EnquireContent.astro:ligz3w">UK's Leading Wedding Agency</p>
+          </div>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="bg-primary text-white rounded-2xl p-6" data-ps="src/components/enquire/EnquireContent.astro:ute8j8">
+          <h3 class="font-bold mb-2" data-ps="src/components/enquire/EnquireContent.astro:r6ma1k">Need immediate help?</h3>
+          <p class="text-sm text-white/80 mb-4" data-ps="src/components/enquire/EnquireContent.astro:ligz3v">Our wedding concierge team is ready to answer your questions.</p>
+          <a href="tel:08001234567" class="flex items-center justify-center gap-2 bg-white text-primary font-bold py-3 px-4 rounded-xl hover:bg-surface transition-colors" data-ps="src/components/enquire/EnquireContent.astro:eej2e7">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            0800 123 4567
+          </a>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import GreeceHero from '@/components/destinations/greece/GreeceHero.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import GreeceIslands from '@/components/destinations/greece/GreeceIslands.astro';
+---
+
+<BaseLayout 
+  title="Weddings in Greece | The Wedding Travel Company" 
+  description="Explore our hand-picked selection of wedding islands and venues in Greece. From Santorini sunsets to historic Rhodes."
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Weddings in Greece",
+    "description": "Explore our hand-picked selection of wedding islands and venues in Greece.",
+    "url": "https://twtc-site.pagesmith.app/destinations/greece/"
+  }}
+>
+  <GreeceHero />
+  <FeaturedCollection />
+  <GreeceIslands />
+</BaseLayout>

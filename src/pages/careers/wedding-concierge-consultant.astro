@@ -1,0 +1,128 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const roleData = {
+  roleTitle: "Wedding Concierge Consultant",
+  type: "Service Focus",
+  intro: "Highly organised, detail-oriented professionals who handle post-sale client support, bookings, guest arrangements, and supplier coordination.",
+  imageUrl: "https://images.pexels.com/photos/8803401/pexels-photo-8803401.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  responsibilities: [
+    "Manage the end-to-end post-sale journey for our wedding couples",
+    "Coordinate with international suppliers and venues to confirm details",
+    "Manage guest travel arrangements and room blocks",
+    "Ensure all administrative tasks and legal requirements for weddings are met",
+    "Provide exceptional customer service and support throughout the planning process"
+  ],
+  requirements: [
+    "Incredible attention to detail and organizational skills",
+    "Strong background in customer service or event coordination",
+    "Ability to manage complex logistics across different time zones",
+    "Empathetic approach with a focus on delivering a stress-free experience for couples",
+    "Proficiency in administrative tasks and travel booking systems"
+  ],
+  benefits: [
+    "Competitive salary with uncapped commission potential",
+    "Supportive, collaborative team environment",
+    "Comprehensive training on global wedding destinations",
+    "Modern, high-spec office facilities",
+    "Career progression opportunities within a growing company"
+  ]
+};
+---
+
+<BaseLayout title={`${roleData.roleTitle} Careers | The Wedding Travel Company`} description={roleData.intro}>
+  <div class="relative min-h-[60vh] flex items-center pt-32 pb-20 overflow-hidden" data-ps="src/pages/careers/wedding-concierge-consultant.astro:aifhbb">
+    <div class="absolute inset-0 z-0" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v9h">
+      <img 
+        src={roleData.imageUrl} 
+        alt={roleData.roleTitle}
+        class="w-full h-full object-cover" 
+        data-ps="src/pages/careers/wedding-concierge-consultant.astro:806czs" 
+      />
+      <div class="absolute inset-0 bg-secondary/60" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v9i"></div>
+    </div>
+    
+    <div class="container relative z-10 mx-auto px-6 text-white" data-ps="src/pages/careers/wedding-concierge-consultant.astro:aifhbc">
+      <div class="max-w-3xl" data-ps="src/pages/careers/wedding-concierge-consultant.astro:aifhbd">
+        <a href="/careers" class="text-white/80 font-bold text-sm uppercase tracking-widest flex items-center gap-2 mb-8 hover:text-white transition-colors" data-ps="src/pages/careers/wedding-concierge-consultant.astro:ga20gz">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Back to Careers
+        </a>
+        <p class="text-[12px] font-bold uppercase tracking-[0.2em] text-white/90 mb-4" data-ps="src/pages/careers/wedding-concierge-consultant.astro:9643r7">{roleData.type}</p>
+        <h1 class="text-4xl md:text-6xl font-bold font-serif mb-6" data-ps="src/pages/careers/wedding-concierge-consultant.astro:60qfqd">{roleData.roleTitle}</h1>
+        <p class="text-xl md:text-2xl text-white/90 leading-relaxed font-light" data-ps="src/pages/careers/wedding-concierge-consultant.astro:9643r8">
+          {roleData.intro}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-20 px-6 bg-white" data-ps="src/pages/careers/wedding-concierge-consultant.astro:content-wrap">
+    <div class="max-w-6xl mx-auto" data-ps="src/pages/careers/wedding-concierge-consultant.astro:aifhbf">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20" data-ps="src/pages/careers/wedding-concierge-consultant.astro:aifhbf-grid">
+        <div class="md:col-span-2 space-y-12" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v99">
+          <section data-ps="src/pages/careers/wedding-concierge-consultant.astro:ue7i19">
+            <h2 class="text-3xl font-bold font-serif text-secondary mb-8 border-b border-border pb-4" data-ps="src/pages/careers/wedding-concierge-consultant.astro:kp5cyk">Key Responsibilities</h2>
+            <div class="space-y-6 text-muted-foreground" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v9a">
+              {roleData.responsibilities.map((item, __psIdx) => (
+                <div class="flex gap-4 items-start group" data-ps={`src/pages/careers/wedding-concierge-consultant.astro:io3v9b-${__psIdx}`}>
+                  <div class="mt-1 flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors" data-ps={`src/pages/careers/wedding-concierge-consultant.astro:io3v9c-${__psIdx}`}>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                    </svg>
+                  </div>
+                  <p class="text-lg leading-relaxed text-secondary/80" data-ps={`src/pages/careers/wedding-concierge-consultant.astro:9643r9-${__psIdx}`}>{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section data-ps="src/pages/careers/wedding-concierge-consultant.astro:ue7i1a">
+            <h2 class="text-3xl font-bold font-serif text-secondary mb-8 border-b border-border pb-4" data-ps="src/pages/careers/wedding-concierge-consultant.astro:kp5cxy">What We're Looking For</h2>
+            <div class="space-y-6 text-muted-foreground" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v9d">
+              {roleData.requirements.map((item, __psIdx) => (
+                <div class="flex gap-4 items-start group" data-ps={`src/pages/careers/wedding-concierge-consultant.astro:io3v9e-${__psIdx}`}>
+                  <div class="mt-1 flex items-center justify-center w-6 h-6 rounded-full bg-accent/10 text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors" data-ps={`src/pages/careers/wedding-concierge-consultant.astro:io3v9f-${__psIdx}`}>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                    </svg>
+                  </div>
+                  <p class="text-lg leading-relaxed text-secondary/80" data-ps={`src/pages/careers/wedding-concierge-consultant.astro:9643ra-${__psIdx}`}>{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        <div class="space-y-8" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v9g">
+          <div class="bg-surface p-8 rounded-2xl border border-border shadow-sm" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v9h">
+            <h3 class="text-xl font-bold font-serif text-secondary mb-6 flex items-center gap-3" data-ps="src/pages/careers/wedding-concierge-consultant.astro:zdka66">
+              <span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-xs" data-ps="src/pages/careers/wedding-concierge-consultant.astro:j6ge0c">★</span>
+              Benefits
+            </h3>
+            <ul class="space-y-4">
+              {roleData.benefits.map((benefit, __psIdx) => (
+                <li class="flex items-start gap-3 text-sm text-secondary/70 font-medium" data-ps={`src/pages/careers/wedding-concierge-consultant.astro:jy6ggr-${__psIdx}`}>
+                  <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="bg-secondary p-8 rounded-2xl text-white" data-ps="src/pages/careers/wedding-concierge-consultant.astro:io3v9i">
+            <h3 class="text-xl font-bold font-serif mb-4" data-ps="src/pages/careers/wedding-concierge-consultant.astro:zdka65">Apply Now</h3>
+            <p class="text-sm text-white/80 mb-6" data-ps="src/pages/careers/wedding-concierge-consultant.astro:9643rb">Ready to join our award-winning team? Send your CV and a brief cover letter to our recruitment team.</p>
+            <a href="mailto:careers@theweddingtravelcompany.com" class="block w-full bg-primary text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors" data-ps="src/pages/careers/wedding-concierge-consultant.astro:ga20h0">
+              Send Application
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

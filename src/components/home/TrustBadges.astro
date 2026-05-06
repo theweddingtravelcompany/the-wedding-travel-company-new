@@ -1,0 +1,128 @@
+---
+// Trust Badges Section
+---
+
+<section id="trust-badges" class="py-8 md:py-16 px-6 bg-surface overflow-hidden" data-ps="src/components/home/TrustBadges.astro:trust-badges">
+  <div class="max-w-7xl mx-auto relative group" data-ps="src/components/home/TrustBadges.astro:container">
+    <!-- Mobile Navigation Arrows -->
+    <button id="trust-nav-left" class="absolute inset-y-0 -left-5 flex items-center md:hidden z-10 transition-opacity" style="display: none;" aria-label="Scroll left" data-ps="src/components/home/TrustBadges.astro:mobile-nav-left">
+      <div class="bg-accent text-white w-8 h-8 rounded-full shadow-md flex items-center justify-center hover:bg-accent-hover transition-colors" data-ps="src/components/home/TrustBadges.astro:w0xjcz">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m15 18-6-6 6-6"/></svg>
+      </div>
+    </button>
+    <button id="trust-nav-right" class="absolute inset-y-0 -right-5 flex items-center md:hidden z-10 transition-opacity" aria-label="Scroll right" data-ps="src/components/home/TrustBadges.astro:mobile-nav-right">
+      <div class="bg-accent text-white w-8 h-8 rounded-full shadow-md flex items-center justify-center hover:bg-accent-hover transition-colors" data-ps="src/components/home/TrustBadges.astro:w0xjcy">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="m9 18 6-6-6-6"/></svg>
+      </div>
+    </button>
+
+    <div id="trust-slider" class="flex md:grid md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 overflow-x-auto pb-4 md:pb-0 scrollbar-hide snap-x snap-mandatory scroll-smooth relative" data-ps="src/components/home/TrustBadges.astro:grid">
+      <!-- Badge 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-4 hover-lift min-w-[calc(50%-0.5rem)] md:min-w-0 snap-center" data-ps="src/components/home/TrustBadges.astro:badge-1">
+        <div class="text-primary" data-ps="src/components/home/TrustBadges.astro:w0xjd3">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+        </div>
+        <h3 class="text-[13px] font-bold text-foreground" data-ps="src/components/home/TrustBadges.astro:tfp9t6">4.9/5 ★ Trustpilot Rated</h3>
+      </div>
+
+      <!-- Badge 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-4 hover-lift min-w-[calc(50%-0.5rem)] md:min-w-0 snap-center" data-ps="src/components/home/TrustBadges.astro:badge-2">
+        <div class="text-primary" data-ps="src/components/home/TrustBadges.astro:w0xjd2">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V6a2 2 0 10-2 2h2zm0 0V6a2 2 0 00-2 2h2zm0 0V6a2 2 0 012 2h-2z"/></svg>
+        </div>
+        <h3 class="text-[13px] font-bold text-foreground" data-ps="src/components/home/TrustBadges.astro:tfp9t7">British Travel Award Winner</h3>
+      </div>
+
+      <!-- Badge 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-4 hover-lift min-w-[calc(50%-0.5rem)] md:min-w-0 snap-center" data-ps="src/components/home/TrustBadges.astro:badge-3">
+        <div class="text-primary" data-ps="src/components/home/TrustBadges.astro:w0xjd1">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3 class="text-[13px] font-bold text-foreground" data-ps="src/components/home/TrustBadges.astro:uqirul">UK's #1 Independent Wedding Company</h3>
+      </div>
+
+      <!-- Badge 4 -->
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-4 hover-lift min-w-[calc(50%-0.5rem)] md:min-w-0 snap-center" data-ps="src/components/home/TrustBadges.astro:badge-4">
+        <div class="text-primary" data-ps="src/components/home/TrustBadges.astro:w0xjd0">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        </div>
+        <h3 class="text-[13px] font-bold text-foreground" data-ps="src/components/home/TrustBadges.astro:uqirum">1,000+ Weddings Planned Every Year</h3>
+      </div>
+
+      <!-- Badge 5 -->
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-4 hover-lift min-w-[calc(50%-0.5rem)] md:min-w-0 snap-center" data-ps="src/components/home/TrustBadges.astro:badge-5">
+        <div class="text-primary" data-ps="src/components/home/TrustBadges.astro:w0xjcz">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="text-[13px] font-bold text-foreground" data-ps="src/components/home/TrustBadges.astro:uqirun">Guaranteed Transparent Pricing</h3>
+      </div>
+
+      <!-- Badge 6 -->
+      <div class="bg-white p-6 rounded-xl shadow-sm text-center flex flex-col items-center justify-center gap-4 hover-lift min-w-[calc(50%-0.5rem)] md:min-w-0 snap-center" data-ps="src/components/home/TrustBadges.astro:badge-6">
+        <div class="text-primary" data-ps="src/components/home/TrustBadges.astro:w0xjcy">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="text-[13px] font-bold text-foreground" data-ps="src/components/home/TrustBadges.astro:uqiruo">Book Up to 3 Years in Advance</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<script>
+  function setupTrustSlider() {
+    const slider = document.getElementById('trust-slider');
+    const leftBtn = document.getElementById('trust-nav-left');
+    const rightBtn = document.getElementById('trust-nav-right');
+
+    if (!slider || !leftBtn || !rightBtn) return;
+
+    function updateButtons() {
+      const isAtStart = slider.scrollLeft <= 10;
+      // Use a small buffer (5px) for the end check due to fractional pixels
+      const isAtEnd = slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 5;
+      
+      leftBtn.style.display = isAtStart ? 'none' : 'flex';
+      rightBtn.style.display = isAtEnd ? 'none' : 'flex';
+    }
+
+    leftBtn.addEventListener('click', () => {
+      if (slider.children.length === 0) return;
+      const firstCard = slider.children[0] as HTMLElement;
+      const gap = 16; // 1rem gap
+      const scrollAmount = firstCard.clientWidth + gap;
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+      if (slider.children.length === 0) return;
+      const firstCard = slider.children[0] as HTMLElement;
+      const gap = 16; // 1rem gap
+      const scrollAmount = firstCard.clientWidth + gap;
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    slider.addEventListener('scroll', updateButtons, { passive: true });
+    
+    // Initial check and on resize
+    updateButtons();
+    window.addEventListener('resize', updateButtons, { passive: true });
+  }
+
+  // Run on load and after view transitions
+  document.addEventListener('astro:page-load', setupTrustSlider);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupTrustSlider);
+  } else {
+    setupTrustSlider();
+  }
+</script>

@@ -1,0 +1,221 @@
+{
+  "success": true,
+  "url": "https://twtc-site.pagesmith.app/",
+  "structured": {
+    "title": "Official Website | The Wedding Travel Company",
+    "description": "Award-winning destination wedding specialists trusted by thousands of couples each year. Design your dream wedding abroad.",
+    "url": "https://twtc-site.pagesmith.app/",
+    "imageCount": 55,
+    "branding": {
+      "colors": {
+        "primary": "#1F2A44",
+        "secondary": "#721378",
+        "accent": "#A81E82",
+        "background": "#FFFFFF",
+        "textPrimary": "#A81E82",
+        "link": "#A81E82"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Montserrat",
+          "heading": "Playfair Display"
+        },
+        "fontStacks": {
+          "heading": [
+            "Playfair Display",
+            "serif"
+          ],
+          "body": [
+            "Montserrat",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Montserrat",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "72px",
+          "h2": "24px",
+          "body": "24px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 8,
+        "borderRadius": "0px"
+      },
+      "logo": "https://cdn.pagesmith.app/b45770a6/images/wedding-travel-co-full-logo-full-colour-rgb.svg",
+      "favicon": "https://cdn.pagesmith.app/b45770a6/favicons/favicon-fa83bd6e.svg",
+      "faviconCdn": "https://cdn.pagesmith.app/4604757a/images/favicon-fa83bd6e.svg"
+    },
+    "pages": [
+      {
+        "slug": "index",
+        "path": "/",
+        "title": "Official Website | The Wedding Travel Company",
+        "file": "data/pages/index.md"
+      }
+    ],
+    "availablePages": [
+      {
+        "path": "/enquire/",
+        "label": "Enquire",
+        "slug": "enquire",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/all-destinations/",
+        "label": "All Destinations",
+        "slug": "destinations-all-destinations",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/cyprus/",
+        "label": "Cyprus",
+        "slug": "destinations-cyprus",
+        "scraped": false
+      },
+      {
+        "path": "/design-your-dream-wedding/",
+        "label": "Design Your Dream Wedding",
+        "slug": "design-your-dream-wedding",
+        "scraped": false
+      },
+      {
+        "path": "/wedding-type/luxury-weddings/",
+        "label": "Luxury Weddings",
+        "slug": "wedding-type-luxury-weddings",
+        "scraped": false
+      },
+      {
+        "path": "/wedding-type/budget-weddings/",
+        "label": "Budget Weddings",
+        "slug": "wedding-type-budget-weddings",
+        "scraped": false
+      },
+      {
+        "path": "/wedding-type/all-inclusive-weddings/",
+        "label": "All Inclusive Weddings",
+        "slug": "wedding-type-all-inclusive-weddings",
+        "scraped": false
+      },
+      {
+        "path": "/wedding-type/boat-weddings/",
+        "label": "Boat Weddings",
+        "slug": "wedding-type-boat-weddings",
+        "scraped": false
+      },
+      {
+        "path": "/testimonials/",
+        "label": "Testimonials",
+        "slug": "testimonials",
+        "scraped": false
+      },
+      {
+        "path": "/wishlist/",
+        "label": "Wishlist",
+        "slug": "wishlist",
+        "scraped": false
+      },
+      {
+        "path": "/blog/",
+        "label": "Blog",
+        "slug": "blog",
+        "scraped": false
+      },
+      {
+        "path": "/venues/st-raphael-resort/",
+        "label": "St Raphael Resort",
+        "slug": "venues-st-raphael-resort",
+        "scraped": false
+      },
+      {
+        "path": "/venues/azure-waters/",
+        "label": "Azure Waters",
+        "slug": "venues-azure-waters",
+        "scraped": false
+      },
+      {
+        "path": "/venues/cypress-estate/",
+        "label": "Cypress Estate",
+        "slug": "venues-cypress-estate",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/greece/",
+        "label": "Greece",
+        "slug": "destinations-greece",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/italy/",
+        "label": "Italy",
+        "slug": "destinations-italy",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/spain/",
+        "label": "Spain",
+        "slug": "destinations-spain",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/mexico/",
+        "label": "Mexico",
+        "slug": "destinations-mexico",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/caribbean/",
+        "label": "Caribbean",
+        "slug": "destinations-caribbean",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/thailand/",
+        "label": "Thailand",
+        "slug": "destinations-thailand",
+        "scraped": false
+      },
+      {
+        "path": "/destinations/mauritius/",
+        "label": "Mauritius",
+        "slug": "destinations-mauritius",
+        "scraped": false
+      },
+      {
+        "path": "/careers/",
+        "label": "Careers",
+        "slug": "careers",
+        "scraped": false
+      },
+      {
+        "path": "/privacy/",
+        "label": "Privacy",
+        "slug": "privacy",
+        "scraped": false
+      },
+      {
+        "path": "/terms/",
+        "label": "Terms",
+        "slug": "terms",
+        "scraped": false
+      },
+      {
+        "path": "/cookies/",
+        "label": "Cookies",
+        "slug": "cookies",
+        "scraped": false
+      }
+    ]
+  },
+  "metadata": {
+    "scraper": "firecrawl-crawl-endpoint",
+    "timestamp": "2026-04-13T09:34:16.031Z",
+    "homepageContentLength": 8337,
+    "imageCount": 55,
+    "hasBranding": true,
+    "pagesDiscovered": 25,
+    "pagesScraped": 1
+  }
+}

@@ -1,0 +1,17 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AllInclusiveWeddingsContent from '@/components/wedding-type/AllInclusiveWeddingsContent.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import WeddingTypeHero from '@/components/wedding-type/WeddingTypeHero.astro';
+---
+
+<BaseLayout title="All Inclusive Weddings | The Wedding Travel Company" description="Stress-free planning with our all-inclusive destination wedding packages. Ceremony, reception, food, and drinks all handled by our experts.">
+  <WeddingTypeHero 
+    title="All-Inclusive Weddings"
+    description="Stress-free planning with our all-inclusive destination wedding packages."
+    image="https://images.pexels.com/photos/7227901/pexels-photo-7227901.png?auto=compress&cs=tinysrgb&w=1920"
+    tags={['STRESS-FREE', 'EVERYTHING COVERED', 'PREMIUM RESORTS']}
+  />
+  <AllInclusiveWeddingsContent />
+  <FeaturedCollection />
+</BaseLayout>

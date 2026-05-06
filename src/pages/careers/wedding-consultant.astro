@@ -1,0 +1,128 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const roleData = {
+  roleTitle: "Wedding Consultant",
+  type: "Sales Focus",
+  intro: "Commercially driven, highly motivated sales professionals who excel at converting high-value enquiries into booked destination weddings.",
+  imageUrl: "https://images.pexels.com/photos/29359917/pexels-photo-29359917.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  responsibilities: [
+    "Manage your own pipeline of high-value wedding enquiries",
+    "Convert initial interest into firm bookings through expert knowledge and relationship building",
+    "Meet and exceed monthly sales targets",
+    "Provide accurate and inspiring information about our global wedding destinations",
+    "Work closely with our Concierge team to ensure a seamless handover"
+  ],
+  requirements: [
+    "Proven track record in high-value sales (travel or wedding industry preferred)",
+    "Ambitious, target-driven mindset with a hunger for success",
+    "Excellent communication and negotiation skills",
+    "Ability to build rapport quickly with couples planning their dream wedding",
+    "Strong organizational skills to manage multiple leads simultaneously"
+  ],
+  benefits: [
+    "Uncapped commission structure",
+    "OTE £3,000 – £5,000+ per month",
+    "Ongoing training and professional development",
+    "Inspirational office environment",
+    "Opportunities for overseas familiarisation trips"
+  ]
+};
+---
+
+<BaseLayout title={`${roleData.roleTitle} Careers | The Wedding Travel Company`} description={roleData.intro}>
+  <div class="relative min-h-[60vh] flex items-center pt-32 pb-20 overflow-hidden" data-ps="src/pages/careers/wedding-consultant.astro:ah2lwz">
+    <div class="absolute inset-0 z-0" data-ps="src/pages/careers/wedding-consultant.astro:ov75sv">
+      <img 
+        src={roleData.imageUrl} 
+        alt={roleData.roleTitle}
+        class="w-full h-full object-cover" 
+        data-ps="src/pages/careers/wedding-consultant.astro:czbq8i" 
+      />
+      <div class="absolute inset-0 bg-secondary/60" data-ps="src/pages/careers/wedding-consultant.astro:ov75sw"></div>
+    </div>
+    
+    <div class="container relative z-10 mx-auto px-6 text-white" data-ps="src/pages/careers/wedding-consultant.astro:ah2lwy">
+      <div class="max-w-3xl" data-ps="src/pages/careers/wedding-consultant.astro:ah2lwx">
+        <a href="/careers" class="text-white/80 font-bold text-sm uppercase tracking-widest flex items-center gap-2 mb-8 hover:text-white transition-colors" data-ps="src/pages/careers/wedding-consultant.astro:9doyyf">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Back to Careers
+        </a>
+        <p class="text-[12px] font-bold uppercase tracking-[0.2em] text-white/90 mb-4" data-ps="src/pages/careers/wedding-consultant.astro:ghmvo7">{roleData.type}</p>
+        <h1 class="text-4xl md:text-6xl font-bold font-serif mb-6" data-ps="src/pages/careers/wedding-consultant.astro:h9z43j">{roleData.roleTitle}</h1>
+        <p class="text-xl md:text-2xl text-white/90 leading-relaxed font-light" data-ps="src/pages/careers/wedding-consultant.astro:ghmvo6">
+          {roleData.intro}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-20 px-6 bg-white" data-ps="src/pages/careers/wedding-consultant.astro:content-wrap">
+    <div class="max-w-6xl mx-auto" data-ps="src/pages/careers/wedding-consultant.astro:ah2lwv">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20" data-ps="src/pages/careers/wedding-consultant.astro:ah2lwv-grid">
+        <div class="md:col-span-2 space-y-12" data-ps="src/pages/careers/wedding-consultant.astro:ov75sn">
+          <section data-ps="src/pages/careers/wedding-consultant.astro:fj61n1">
+            <h2 class="text-3xl font-bold font-serif text-secondary mb-8 border-b border-border pb-4" data-ps="src/pages/careers/wedding-consultant.astro:vye1bq">Key Responsibilities</h2>
+            <div class="space-y-6 text-muted-foreground" data-ps="src/pages/careers/wedding-consultant.astro:ov75so">
+              {roleData.responsibilities.map((item, __psIdx) => (
+                <div class="flex gap-4 items-start group" data-ps={`src/pages/careers/wedding-consultant.astro:ov75sp-${__psIdx}`}>
+                  <div class="mt-1 flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors" data-ps={`src/pages/careers/wedding-consultant.astro:ov75sq-${__psIdx}`}>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                    </svg>
+                  </div>
+                  <p class="text-lg leading-relaxed text-secondary/80" data-ps={`src/pages/careers/wedding-consultant.astro:ghmvo5-${__psIdx}`}>{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section data-ps="src/pages/careers/wedding-consultant.astro:fj61n0">
+            <h2 class="text-3xl font-bold font-serif text-secondary mb-8 border-b border-border pb-4" data-ps="src/pages/careers/wedding-consultant.astro:vye1b4">What We're Looking For</h2>
+            <div class="space-y-6 text-muted-foreground" data-ps="src/pages/careers/wedding-consultant.astro:ov75sr">
+              {roleData.requirements.map((item, __psIdx) => (
+                <div class="flex gap-4 items-start group" data-ps={`src/pages/careers/wedding-consultant.astro:ov75ss-${__psIdx}`}>
+                  <div class="mt-1 flex items-center justify-center w-6 h-6 rounded-full bg-accent/10 text-accent flex-shrink-0 group-hover:bg-accent group-hover:text-white transition-colors" data-ps={`src/pages/careers/wedding-consultant.astro:ov75st-${__psIdx}`}>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                    </svg>
+                  </div>
+                  <p class="text-lg leading-relaxed text-secondary/80" data-ps={`src/pages/careers/wedding-consultant.astro:ghmvo4-${__psIdx}`}>{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        <div class="space-y-8" data-ps="src/pages/careers/wedding-consultant.astro:ov75su">
+          <div class="bg-surface p-8 rounded-2xl border border-border shadow-sm" data-ps="src/pages/careers/wedding-consultant.astro:ov75sv">
+            <h3 class="text-xl font-bold font-serif text-secondary mb-6 flex items-center gap-3" data-ps="src/pages/careers/wedding-consultant.astro:oeb3fs">
+              <span class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-xs" data-ps="src/pages/careers/wedding-consultant.astro:7vw3nq">★</span>
+              Benefits
+            </h3>
+            <ul class="space-y-4">
+              {roleData.benefits.map((benefit, __psIdx) => (
+                <li class="flex items-start gap-3 text-sm text-secondary/70 font-medium" data-ps={`src/pages/careers/wedding-consultant.astro:v7f4tx-${__psIdx}`}>
+                  <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="bg-secondary p-8 rounded-2xl text-white" data-ps="src/pages/careers/wedding-consultant.astro:ov75sw">
+            <h3 class="text-xl font-bold font-serif mb-4" data-ps="src/pages/careers/wedding-consultant.astro:oeb3ft">Apply Now</h3>
+            <p class="text-sm text-white/80 mb-6" data-ps="src/pages/careers/wedding-consultant.astro:ghmvo3">Ready to join our award-winning team? Send your CV and a brief cover letter to our recruitment team.</p>
+            <a href="mailto:careers@theweddingtravelcompany.com" class="block w-full bg-primary text-white text-center py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors" data-ps="src/pages/careers/wedding-consultant.astro:9doyye">
+              Send Application
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

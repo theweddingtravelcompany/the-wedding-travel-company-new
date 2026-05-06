@@ -1,0 +1,183 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { WishlistButton } from '@/components/wishlist/WishlistButton.tsx';
+
+export function getStaticPaths() {
+  const destinations = [
+    { slug: 'paphos', title: 'Paphos Weddings' },
+    { slug: 'larnaca', title: 'Larnaca Weddings' },
+    { slug: 'ayia-napa', title: 'Ayia Napa Weddings' },
+    { slug: 'protaras', title: 'Protaras Weddings' },
+    { slug: 'las-vegas', title: 'Las Vegas Weddings' },
+    { slug: 'rhodes', title: 'Rhodes Weddings' },
+    { slug: 'santorini', title: 'Santorini Weddings' },
+    { slug: 'zante', title: 'Zante Weddings' },
+    { slug: 'crete', title: 'Crete Weddings' },
+    { slug: 'skiathos', title: 'Skiathos Weddings' },
+    { slug: 'mykonos', title: 'Mykonos Weddings' },
+    { slug: 'corfu', title: 'Corfu Weddings' },
+    { slug: 'kos', title: 'Kos Weddings' },
+    { slug: 'halkidiki', title: 'Halkidiki Weddings' },
+    { slug: 'athens', title: 'Athens Weddings' },
+    { slug: 'sorrento-and-naples', title: 'Sorrento & Naples Weddings' },
+    { slug: 'amalfi-coast', title: 'Amalfi Coast Weddings' },
+    { slug: 'lake-garda', title: 'Lake Garda Weddings' },
+    { slug: 'lake-como', title: 'Lake Como Weddings' },
+    { slug: 'tuscany', title: 'Tuscany Weddings' },
+    { slug: 'venice', title: 'Venice Weddings' },
+    { slug: 'malta', title: 'Malta Weddings' },
+    { slug: 'turkey', title: 'Turkey Weddings' },
+    { slug: 'europe', title: 'European Weddings' },
+    { slug: 'croatia', title: 'Croatia Weddings' },
+    { slug: 'portugal', title: 'Portugal Weddings' },
+    { slug: 'indian-ocean', title: 'Indian Ocean Weddings' },
+    { slug: 'usa', title: 'USA Weddings' },
+    { slug: 'new-york', title: 'New York Weddings' },
+    { slug: 'florida', title: 'Florida Weddings' },
+    { slug: 'ibiza', title: 'Ibiza Weddings' },
+    { slug: 'costa-del-sol', title: 'Costa del sol Weddings' },
+    { slug: 'tenerife', title: 'Tenerife Weddings' }
+  ];
+
+  return destinations.map(dest => ({
+    params: { destination: dest.slug },
+    props: { title: dest.title }
+  }));
+}
+
+const { title } = Astro.props;
+
+// Placeholder images fetched from Unsplash
+const heroImage = "https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=1200";
+const heroSrcset = "https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=320 320w, https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=768 768w, https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=1024 1024w, https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=1280 1280w, https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=1920 1920w";
+
+// Placeholder venue data
+const placeholderVenues = [
+  {
+    id: `ph-1-${title.replace(/\s+/g, '-').toLowerCase()}`,
+    name: "Luxury Beach Resort",
+    location: title,
+    type: "All-Inclusive",
+    image: "https://images.pexels.com/photos/32994477/pexels-photo-32994477.jpeg?auto=compress&cs=tinysrgb&w=800",
+    srcset: "https://images.pexels.com/photos/32994477/pexels-photo-32994477.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/32994477/pexels-photo-32994477.jpeg?auto=compress&cs=tinysrgb&w=800 800w",
+  },
+  {
+    id: `ph-2-${title.replace(/\s+/g, '-').toLowerCase()}`,
+    name: "Ocean View Villa",
+    location: title,
+    type: "Private Villa",
+    image: "https://images.pexels.com/photos/10962460/pexels-photo-10962460.jpeg?auto=compress&cs=tinysrgb&w=800",
+    srcset: "https://images.pexels.com/photos/10962460/pexels-photo-10962460.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/10962460/pexels-photo-10962460.jpeg?auto=compress&cs=tinysrgb&w=800 800w",
+  },
+  {
+    id: `ph-3-${title.replace(/\s+/g, '-').toLowerCase()}`,
+    name: "Historic Garden Estate",
+    location: title,
+    type: "Garden Venue",
+    image: "https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=800",
+    srcset: "https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=400 400w, https://images.pexels.com/photos/4679373/pexels-photo-4679373.jpeg?auto=compress&cs=tinysrgb&w=800 800w",
+  }
+];
+---
+
+<BaseLayout title={`${title} | The Wedding Travel Company`} description={`Explore beautiful wedding venues and packages for ${title}. Start planning your dream destination wedding today.`}>
+  <!-- Hero Section -->
+  <section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden" data-ps="src/pages/destinations/[destination].astro:apwuz9">
+    <div class="absolute inset-0 w-full h-full" data-ps="src/pages/destinations/[destination].astro:uyxgf8">
+      <img crossorigin="anonymous" src={heroImage} srcset={heroSrcset} sizes="100vw" alt={`${title} Hero`} class="w-full h-full object-cover" loading="eager" fetchpriority="high" data-ps="src/pages/destinations/[destination].astro:xh6krf" />
+      <div class="absolute inset-0 bg-black/40" data-ps="src/pages/destinations/[destination].astro:uyxgf7"></div>
+    </div>
+    
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto" data-ps="src/pages/destinations/[destination].astro:uyxgf6">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-serif leading-tight" data-ps="src/pages/destinations/[destination].astro:cn3v2g">
+        {title}
+      </h1>
+      <p class="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium" data-ps="src/pages/destinations/[destination].astro:a9y3ty">
+        Discover the perfect backdrop for your special day with our exclusive venues and tailored packages.
+      </p>
+      <a href="/enquire2" class="inline-block px-8 py-4 bg-[#A81E82] text-white font-bold text-[10px] uppercase tracking-widest hover:bg-[#8e196e] transition-colors rounded-xl" data-ps="src/pages/destinations/[destination].astro:36074t">
+        Start Planning
+      </a>
+    </div>
+  </section>
+
+  <!-- Intro Content -->
+  <section class="py-20 bg-white" data-ps="src/pages/destinations/[destination].astro:apwuz8">
+    <div class="max-w-4xl mx-auto px-6 text-center" data-ps="src/pages/destinations/[destination].astro:uyxgf5">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#1F2A44] font-serif mb-6" data-ps="src/pages/destinations/[destination].astro:rbisa3">Why Choose {title}?</h2>
+      <p class="text-stone-600 leading-relaxed mb-8" data-ps="src/pages/destinations/[destination].astro:a9y3tx">
+        This is placeholder text for the {title} destination page. We will update this section with rich descriptions about the culture, landscape, and unique wedding opportunities available in this breathtaking location. 
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12" data-ps="src/pages/destinations/[destination].astro:uyxgf4">
+        <div class="p-6 bg-stone-50 rounded-2xl" data-ps="src/pages/destinations/[destination].astro:uyxgf3">
+          <h3 class="font-bold text-xl text-[#1F2A44] font-serif mb-3" data-ps="src/pages/destinations/[destination].astro:t16cgs">Stunning Scenery</h3>
+          <p class="text-sm text-stone-600" data-ps="src/pages/destinations/[destination].astro:a9y3tw">Breathtaking views for your perfect wedding photos.</p>
+        </div>
+        <div class="p-6 bg-stone-50 rounded-2xl" data-ps="src/pages/destinations/[destination].astro:uyxgf2">
+          <h3 class="font-bold text-xl text-[#1F2A44] font-serif mb-3" data-ps="src/pages/destinations/[destination].astro:t16cgt">Expert Planning</h3>
+          <p class="text-sm text-stone-600" data-ps="src/pages/destinations/[destination].astro:a9y3tv">Our dedicated team will handle every detail of your day.</p>
+        </div>
+        <div class="p-6 bg-stone-50 rounded-2xl" data-ps="src/pages/destinations/[destination].astro:uyxgf1">
+          <h3 class="font-bold text-xl text-[#1F2A44] font-serif mb-3" data-ps="src/pages/destinations/[destination].astro:t16chf">Exclusive Venues</h3>
+          <p class="text-sm text-stone-600" data-ps="src/pages/destinations/[destination].astro:a9y3tu">Access to the most sought-after locations in the area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder Venues -->
+  <section class="py-24 bg-stone-50" data-ps="src/pages/destinations/[destination].astro:apwuym">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/destinations/[destination].astro:qhvuf9">
+      <div class="text-center max-w-3xl mx-auto mb-16" data-ps="src/pages/destinations/[destination].astro:qhvufa">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#1F2A44] font-serif mb-6" data-ps="src/pages/destinations/[destination].astro:rbisa2">Featured Venues in {title}</h2>
+        <p class="text-stone-600" data-ps="src/pages/destinations/[destination].astro:a9y3tt">Explore our hand-picked selection of luxury resorts, private villas, and beachfront venues perfect for your celebration.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-ps="src/pages/destinations/[destination].astro:qhvufb">
+        {placeholderVenues.map(venue => (
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group" data-ps="src/pages/destinations/[destination].astro:qhvufc">
+            <div class="relative h-64 overflow-hidden" data-ps="src/pages/destinations/[destination].astro:qhvufd">
+              <img crossorigin="anonymous" src={venue.image} srcset={venue.srcset} sizes="(max-width: 768px) 100vw, 33vw" alt={venue.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" data-ps="src/pages/destinations/[destination].astro:xh6kre" />
+              <div class="absolute top-4 right-4 z-10" data-ps="src/pages/destinations/[destination].astro:qhvufe">
+                <WishlistButton 
+                  client:load 
+                  venue={{
+                    id: venue.id,
+                    name: venue.name,
+                    location: venue.location,
+                    image: venue.image,
+                    url: `/enquire2`
+                  }}
+                  iconOnly={true}
+                />
+              </div>
+            </div>
+            <div class="p-6" data-ps="src/pages/destinations/[destination].astro:qhvuff">
+              <div class="text-[10px] font-bold uppercase tracking-widest text-[#A81E82] mb-2" data-ps="src/pages/destinations/[destination].astro:qhvufg">{venue.type}</div>
+              <h3 class="text-xl font-bold text-[#1F2A44] font-serif mb-2" data-ps="src/pages/destinations/[destination].astro:t16chg">{venue.name}</h3>
+              <p class="text-stone-600 text-sm mb-6 flex items-center gap-2" data-ps="src/pages/destinations/[destination].astro:a9y3ts">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                {venue.location}
+              </p>
+              <a href="/enquire2" class="block text-center w-full py-3 border border-stone-200 text-[#1F2A44] font-bold text-[10px] uppercase tracking-wider hover:bg-[#1F2A44] hover:text-white transition-colors rounded-xl" data-ps="src/pages/destinations/[destination].astro:36074s">
+                View Details
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 bg-[#1F2A44] text-white text-center" data-ps="src/pages/destinations/[destination].astro:apwuyl">
+    <div class="max-w-3xl mx-auto px-6" data-ps="src/pages/destinations/[destination].astro:qhvufh">
+      <h2 class="text-3xl md:text-5xl font-bold font-serif mb-6" data-ps="src/pages/destinations/[destination].astro:rbisa1">Ready to plan your {title}?</h2>
+      <p class="text-white/80 mb-10 text-lg" data-ps="src/pages/destinations/[destination].astro:a9y3tr">Speak to our destination wedding specialists today to start turning your dream wedding into a reality.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4" data-ps="src/pages/destinations/[destination].astro:qhvufi">
+        <a href="/enquire2" class="w-full sm:w-auto px-8 py-4 bg-[#A81E82] hover:bg-[#8e196e] text-white font-bold text-[10px] uppercase tracking-widest rounded-xl transition-all" data-ps="src/pages/destinations/[destination].astro:36074r">Enquire Now</a>
+        <a href="tel:08000911137" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold text-[10px] uppercase tracking-widest rounded-xl transition-all border border-white/20" data-ps="src/pages/destinations/[destination].astro:36074q">Call Us: 0800 0911 137</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

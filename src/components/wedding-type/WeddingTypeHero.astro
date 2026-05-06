@@ -1,0 +1,51 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  ctaText?: string;
+}
+
+const { 
+  title, 
+  description, 
+  image, 
+  tags,
+  ctaText = "Get My Personalised Quote" 
+} = Astro.props;
+---
+
+<section class="relative bg-secondary min-h-[400px] md:min-h-[600px] flex items-center py-12 md:py-20 px-4 md:px-6 overflow-hidden" data-ps="src/components/wedding-type/WeddingTypeHero.astro:20sqwy">
+  <div class="absolute inset-0 z-0" data-ps="src/components/wedding-type/WeddingTypeHero.astro:f5ya3d">
+    <img
+      src={image}
+      alt={title}
+      class="w-full h-full object-cover"
+      loading="eager"
+      crossorigin="anonymous" data-ps="src/components/wedding-type/WeddingTypeHero.astro:pzwt8h" />
+    <div class="absolute inset-0 bg-secondary/50" data-ps="src/components/wedding-type/WeddingTypeHero.astro:f5ya3c"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto w-full relative z-10 text-white" data-ps="src/components/wedding-type/WeddingTypeHero.astro:f5ya3b">
+    <h1 class="text-[48px] md:text-[72px] font-bold font-serif leading-tight mb-6" data-ps="src/components/wedding-type/WeddingTypeHero.astro:2arhuc">
+      {title}
+    </h1>
+    <p class="text-[24px] text-white/80 max-w-2xl mb-8" data-ps="src/components/wedding-type/WeddingTypeHero.astro:9s3vmt">
+      {description}
+    </p>
+    {tags && tags.length > 0 && (
+      <div class="flex flex-wrap gap-4 text-[10px] font-bold uppercase tracking-widest mb-8" data-ps="src/components/wedding-type/WeddingTypeHero.astro:f5ya3a">
+        {tags.map((tag, index) => (
+          <>
+            <span data-ps={`src/components/wedding-type/WeddingTypeHero.astro:z4fhdj-${index}`}>{tag}</span>
+            {index < tags.length - 1 && <span data-ps={`src/components/wedding-type/WeddingTypeHero.astro:z4fhdi-${index}`}>|</span>}
+          </>
+        ))}
+      </div>
+    )}
+    <a href="/enquire2" class="inline-block mt-8 bg-primary text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors" data-ps="src/components/wedding-type/WeddingTypeHero.astro:q6txk7">
+      {ctaText}
+    </a>
+  </div>
+</section>

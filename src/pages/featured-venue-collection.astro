@@ -1,0 +1,96 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "The Featured Collection | Featured Wedding Venues",
+  "description": "Explore our handpicked collection of the world's most prestigious and sought-after wedding venues.",
+  "url": `${SITE.url}/featured-venue-collection/`
+};
+
+// Hero data to match wedding types style
+const hero = {
+  title: "The Featured Collection",
+  description: "A handpicked selection of our most prestigious and sought-after wedding venues around the world.",
+  image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=2000",
+  tags: ["Luxury Estates", "Beachfront Resorts", "Historic Villas"]
+};
+---
+
+<BaseLayout 
+  title="The Featured Collection | Featured Wedding Venues"
+  description="Explore our handpicked collection of the world's most prestigious and sought-after wedding venues. Discover luxury escapes and unique settings for your dream wedding."
+  jsonLd={jsonLd}
+>
+  <!-- Styled Hero Section inline with Wedding Types -->
+  <section class="relative bg-secondary min-h-[500px] flex items-center py-24 px-6 overflow-hidden" data-ps="src/pages/featured-venue-collection.astro:hero">
+    <div class="absolute inset-0 z-0" data-ps="src/pages/featured-venue-collection.astro:hero-bg">
+      <img
+        src={hero.image}
+        alt={hero.title}
+        class="w-full h-full object-cover"
+        loading="eager"
+        crossorigin="anonymous" 
+        data-ps="src/pages/featured-venue-collection.astro:hero-img" />
+      <div class="absolute inset-0 bg-secondary/50" data-ps="src/pages/featured-venue-collection.astro:hero-overlay"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto w-full relative z-10 text-white" data-ps="src/pages/featured-venue-collection.astro:hero-content">
+      <h1 class="text-[48px] md:text-[72px] font-bold font-serif leading-tight mb-6" data-ps="src/pages/featured-venue-collection.astro:hero-title">
+        {hero.title}
+      </h1>
+      <p class="text-[24px] text-white/80 max-w-2xl mb-8" data-ps="src/pages/featured-venue-collection.astro:hero-desc">
+        {hero.description}
+      </p>
+      <div class="flex flex-wrap gap-4 text-[10px] font-bold uppercase tracking-widest mb-8" data-ps="src/pages/featured-venue-collection.astro:hero-tags">
+        {hero.tags.map((tag, index) => (
+          <>
+            <span data-ps={`src/pages/featured-venue-collection.astro:tag-${index}`}>{tag}</span>
+            {index < hero.tags.length - 1 && <span data-ps={`src/pages/featured-venue-collection.astro:separator-${index}`}>|</span>}
+          </>
+        ))}
+      </div>
+      <a href="/enquire2" class="inline-block bg-primary text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-[12px] hover:bg-primary-hover transition-colors shadow-lg" data-ps="src/pages/featured-venue-collection.astro:hero-cta">
+        Enquire About This Collection
+      </a>
+    </div>
+  </section>
+
+  <FeaturedCollection />
+  
+  <!-- Content Section for SEO -->
+  <section class="py-20 bg-stone-50" data-ps="src/pages/featured-venue-collection.astro:seo-section">
+    <div class="max-w-4xl mx-auto px-6" data-ps="src/pages/featured-venue-collection.astro:aabrzy">
+      <div class="prose prose-stone max-w-none text-center" data-ps="src/pages/featured-venue-collection.astro:seo-content">
+        <h2 class="text-2xl md:text-3xl font-serif text-primary mb-8" data-ps="src/pages/featured-venue-collection.astro:h2">Why Choose Our Featured Collection?</h2>
+        <p class="text-muted leading-relaxed mb-6" data-ps="src/pages/featured-venue-collection.astro:p1">
+          At The Wedding Travel Company, we understand that your venue sets the tone for your entire celebration. Our Featured Collection represents the pinnacle of destination wedding excellence, chosen for their exceptional service, breathtaking locations, and proven track record in hosting unforgettable weddings.
+        </p>
+        <p class="text-muted leading-relaxed" data-ps="src/pages/featured-venue-collection.astro:p2">
+          Whether you're dreaming of a barefoot ceremony on the sands of Cyprus, a sophisticated island celebration in Rhodes, or a grand affair in the heart of the Mediterranean, our collection offers diverse options to suit every style and vision. Every venue in this list has been personally vetted by our wedding specialists to ensure it meets our exacting standards.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-primary text-white" data-ps="src/pages/featured-venue-collection.astro:cta">
+    <div class="max-w-4xl mx-auto px-6 text-center" data-ps="src/pages/featured-venue-collection.astro:aabrzz">
+      <h2 class="text-3xl md:text-4xl font-serif mb-6" data-ps="src/pages/featured-venue-collection.astro:cta-h2">Found Your Perfect Venue?</h2>
+      <p class="text-white/80 text-lg mb-10" data-ps="src/pages/featured-venue-collection.astro:cta-p">
+        Our wedding concierges are ready to help you secure your dates and start planning your dream wedding abroad.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center" data-ps="src/pages/featured-venue-collection.astro:cta-btns">
+        <a href="/enquire2" class="px-8 py-4 bg-accent hover:bg-accent-hover text-white font-bold rounded-xl transition-all shadow-lg" data-ps="src/pages/featured-venue-collection.astro:cta-primary">
+          Check Availability
+        </a>
+        <a href="/design-your-dream-wedding" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold border border-white/30 rounded-xl transition-all" data-ps="src/pages/featured-venue-collection.astro:cta-secondary">
+          Design Your Wedding
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

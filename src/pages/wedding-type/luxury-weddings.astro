@@ -1,0 +1,18 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import LuxuryWeddingsContent from '@/components/wedding-type/LuxuryWeddingsContent.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import WeddingTypeHero from '@/components/wedding-type/WeddingTypeHero.astro';
+---
+
+<BaseLayout title="Luxury Weddings | The Wedding Travel Company" description="Experience the pinnacle of romance with our curated selection of luxury wedding venues. From private villas to 5-star beachfront resorts.">
+  <WeddingTypeHero 
+    title="Luxury Weddings"
+    description="Unforgettable celebrations in the world's most exclusive destinations."
+    image="https://images.unsplash.com/photo-1544161513-0179fe746fd5?auto=format&w=1920&q=80"
+    tags={['ELITE VENUES', 'VIP PLANNING SERVICE', 'BESPOKE PACKAGES']}
+    ctaText="Request Luxury Brochure"
+  />
+  <LuxuryWeddingsContent />
+  <FeaturedCollection />
+</BaseLayout>

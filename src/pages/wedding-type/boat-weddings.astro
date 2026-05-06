@@ -1,0 +1,17 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BoatWeddingsContent from '@/components/wedding-type/BoatWeddingsContent.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import WeddingTypeHero from '@/components/wedding-type/WeddingTypeHero.astro';
+---
+
+<BaseLayout title="Boat Weddings | The Wedding Travel Company" description="Set sail for romance with our exclusive boat wedding packages. Exchange vows on deck surrounded by the stunning Mediterranean sea.">
+  <WeddingTypeHero 
+    title="Boat Weddings"
+    description="Set sail for romance with our exclusive yacht and boat wedding packages."
+    image="https://images.pexels.com/photos/1721927/pexels-photo-1721927.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    tags={['UNIQUE VENUES', 'MEDITERRANEAN VIEWS', 'EXCLUSIVE HIRE']}
+  />
+  <BoatWeddingsContent />
+  <FeaturedCollection />
+</BaseLayout>

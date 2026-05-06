@@ -1,0 +1,34 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import TrustBadges from '@/components/home/TrustBadges.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import EuropeanDestinations from '@/components/home/EuropeanDestinations.astro';
+import LongHaulParadise from '@/components/home/LongHaulParadise.astro';
+import WhyChooseUs from '@/components/home/WhyChooseUs.astro';
+import WeddingTypesCarousel from '@/components/home/WeddingTypesCarousel.astro';
+import Testimonials from '@/components/home/Testimonials.astro';
+import Newsletter from '@/components/home/Newsletter.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "The Wedding Travel Company",
+  "description": "Award-winning destination wedding specialists trusted by thousands of couples each year. Design your dream wedding abroad.",
+  "url": "https://twtc-site.pagesmith.app/",
+  "image": "https://cdn.pagesmith.app/4604757a/images/wedding-travel-co-full-logo-full-colour-rgb.svg",
+  "telephone": "0800 0911 137"
+};
+---
+
+<BaseLayout title="Official Website | The Wedding Travel Company" jsonLd={jsonLd}>
+  <Hero />
+  <TrustBadges />
+  <FeaturedCollection />
+  <EuropeanDestinations />
+  <LongHaulParadise />
+  <WhyChooseUs />
+  <WeddingTypesCarousel />
+  <Testimonials />
+  <Newsletter />
+</BaseLayout>

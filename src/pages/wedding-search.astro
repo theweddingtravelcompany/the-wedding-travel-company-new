@@ -1,0 +1,187 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { WeddingSearch as WeddingSearchIsland } from '@/components/islands/WeddingSearch';
+import { SITE } from '@/config/site';
+
+const venues = [
+  {
+    id: "st-raphael-resort",
+    title: "St. Raphael Resort",
+    location: "Limassol, Cyprus",
+    description: "Beachfront luxury with a private chapel and stunning Mediterranean views, perfect for large or intimate weddings.",
+    price: "£2,499",
+    category: "Beachfront Resort",
+    rating: "4.9",
+    guestCount: "Based on 30 guests",
+    href: "/venues/st-raphael-resort",
+    image: "https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=800&q=80",
+    tags: ["Featured"],
+    searchTags: ["Hotel", "Beach", "All-Inclusive", "Family", "Beachside", "Coastal"]
+  },
+  {
+    id: "olympic-lagoon-paphos",
+    title: "Olympic Lagoon Resort Paphos",
+    location: "Paphos, Cyprus",
+    description: "A premium all-inclusive resort offering multiple stunning ceremony locations overlooking the Mediterranean sea.",
+    price: "£4,999",
+    category: "Beachfront Resort",
+    rating: "5.0",
+    guestCount: "Based on 20 guests",
+    href: "/venues/olympic-lagoon-paphos",
+    image: "https://images.unsplash.com/photo-1695196265659-de691b30e7b7?auto=format&w=800&q=80",
+    tags: ["Featured"],
+    searchTags: ["Hotel", "All-Inclusive", "Adult-Only", "Luxury", "Seaview", "Coastal"]
+  },
+  {
+    id: "vasilias-nikoklis",
+    title: "Vasilias Nikoklis Inn",
+    location: "Nikokleia, Cyprus",
+    description: "A family-run traditional stone inn offering a charming and private atmosphere for intimate wedding celebrations.",
+    price: "£3,450",
+    category: "Rustic Villa",
+    rating: "5.0",
+    guestCount: "Based on 15 guests",
+    href: "/venues/vasilias-nikoklis-inn",
+    image: "https://images.unsplash.com/photo-1643856557143-09189e523fd6?auto=format&w=800&q=80",
+    tags: ["Featured"],
+    searchTags: ["Heritage Site", "Small & Intimate", "Budget", "Countryside", "Rural"]
+  },
+  {
+    id: "elias-beach",
+    title: "Elias Beach Hotel",
+    location: "Limassol, Cyprus",
+    description: "Features the exclusive Sunset Pier, providing a unique 'wedding on the water' experience with spectacular views.",
+    price: "£4,200",
+    category: "Hotel & Spa",
+    rating: "4.8",
+    guestCount: "Based on 30 guests",
+    href: "/venues/elias-beach-hotel",
+    image: "https://images.unsplash.com/photo-1673807945389-4cc21ea611f6?auto=format&w=800&q=80",
+    tags: ["Featured"],
+    searchTags: ["Hotel", "Beach", "Family", "Seaview", "Beachside", "Coastal"]
+  },
+  {
+    id: "azure-terrace",
+    title: "The Azure Terrace",
+    location: "SANTORINI, GREECE",
+    description: "A breathtaking white-washed terrace perched 300m above the volcanic caldera, offering world-class sunset views.",
+    price: "£6,450",
+    category: "Ocean View",
+    rating: "5.0",
+    guestCount: "Based on 20 guests",
+    href: "/venues/azure-waters",
+    image: "https://cdn.pagesmith.app/4604757a/images/1-1536.webp",
+    tags: ["Featured"],
+    searchTags: ["Ceremony Venue", "Luxury", "Adult-Only", "Seaview", "Coastal"]
+  },
+  {
+    id: "nomad-palms",
+    title: "Nomad Palms Cove",
+    location: "TULUM, MEXICO",
+    description: "Rustic luxury meets white sand. An intimate boho-inspired venue surrounded by lush jungle and turquoise waters.",
+    price: "£4,800",
+    category: "Beachfront",
+    rating: "4.7",
+    guestCount: "Based on 25 guests",
+    href: "/venues/cypress-estate",
+    image: "https://cdn.pagesmith.app/4604757a/images/2-1536.webp",
+    tags: ["Featured"],
+    searchTags: ["Beach", "Elopement", "Small & Intimate", "Beachside", "Near Beach"]
+  },
+  {
+    id: "ocean-breeze-yacht",
+    title: "Ocean Breeze Yacht",
+    location: "Ibiza, Spain",
+    description: "Say 'I do' on the open water aboard a luxury private catamaran.",
+    price: "£7,200",
+    category: "Yacht",
+    rating: "4.9",
+    guestCount: "Based on 40 guests",
+    href: "/venues/ocean-breeze",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&w=800&q=80",
+    tags: ["New"],
+    searchTags: ["Yacht", "Luxury", "Adult-Only", "Seaview", "Coastal"]
+  },
+  {
+    id: "historic-castle",
+    title: "Chateau De L'Amour",
+    location: "Provence, France",
+    description: "A spectacular 16th-century castle set among rolling lavender fields.",
+    price: "£12,000",
+    category: "Castle",
+    rating: "5.0",
+    guestCount: "Based on 80 guests",
+    href: "/venues/chateau",
+    image: "https://images.pexels.com/photos/13907756/pexels-photo-13907756.jpeg?auto=format&w=800&q=80",
+    tags: ["Premium"],
+    searchTags: ["Castle", "Heritage Site", "Luxury", "Same Sex", "Countryside", "Rural"]
+  },
+  {
+    id: "city-hall-nyc",
+    title: "Manhattan View Town Hall",
+    location: "New York, USA",
+    description: "Iconic city chic elopement destination with rooftop views.",
+    price: "£1,500",
+    category: "Town Hall",
+    rating: "4.8",
+    guestCount: "Based on 2 guests",
+    href: "/venues/manhattan-view",
+    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&w=800&q=80",
+    tags: ["City"],
+    searchTags: ["Town Hall", "Elopement", "Budget", "Small & Intimate", "Same Sex", "City", "Town"]
+  },
+  {
+    id: "secret-garden",
+    title: "The Secret Garden",
+    location: "Tuscany, Italy",
+    description: "Hidden botanical park setting for a romantic and organic ceremony.",
+    price: "£5,500",
+    category: "Park",
+    rating: "4.9",
+    guestCount: "Based on 50 guests",
+    href: "/venues/secret-garden",
+    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&w=800&q=80",
+    tags: ["Nature"],
+    searchTags: ["Park", "Family", "Same Sex", "Countryside", "Rural"]
+  },
+  {
+    id: "saint-johns",
+    title: "St. John's Chapel",
+    location: "Malta",
+    description: "Traditional stone chapel overlooking the crystal clear Mediterranean.",
+    price: "£2,100",
+    category: "Chapel",
+    rating: "4.6",
+    guestCount: "Based on 60 guests",
+    href: "/venues/saint-johns",
+    image: "https://images.pexels.com/photos/13907756/pexels-photo-13907756.jpeg?auto=format&w=800&q=80",
+    tags: ["Traditional"],
+    searchTags: ["Chapel", "Church", "Budget", "Family", "Coastal", "Near Beach"]
+  }
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SearchResultsPage",
+  "name": "Wedding Search Results",
+  "description": "Find your perfect destination wedding venue with our advanced search filters.",
+  "url": `${SITE.url}/wedding-search`
+};
+---
+
+<BaseLayout title="Wedding Search Results | The Wedding Travel Company" jsonLd={jsonLd}>
+  <main class="py-16 md:py-24 bg-surface min-h-screen" data-ps="src/pages/wedding-search.astro:ixs91v">
+    <div class="max-w-7xl mx-auto px-6" data-ps="src/pages/wedding-search.astro:ag67t8">
+      <div class="max-w-3xl mb-16" data-ps="src/pages/wedding-search.astro:ag67t9">
+        <h1 class="text-[42px] md:text-[56px] font-bold font-serif text-secondary mb-6 leading-tight" data-ps="src/pages/wedding-search.astro:x23lg2">
+          Find Your <span class="text-primary italic" data-ps="src/pages/wedding-search.astro:3snghc">Dream Venue</span>
+        </h1>
+        <p class="text-lg text-muted-foreground leading-relaxed" data-ps="src/pages/wedding-search.astro:8g54l">
+          Explore our hand-picked collection of premium wedding venues across the globe. From sun-drenched Mediterranean terraces to exotic beachfront escapes.
+        </p>
+      </div>
+      
+      <WeddingSearchIsland client:load venues={venues} />
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,421 @@
+---
+// Cyprus Venues Section
+import { WishlistButton } from '@/components/wishlist/WishlistButton';
+import { VenueImageSlider } from '@/components/destinations/VenueImageSlider';
+---
+
+<section class="py-24 px-6 bg-background" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:2lumhl">
+  <div class="max-w-7xl mx-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn4">
+    <div class="text-center mb-16" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn3">
+      <h2 class="text-[42px] font-bold font-serif text-secondary mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:jwby83">Your Dream Cyprus Wedding</h2>
+      <p class="text-muted-foreground max-w-3xl mx-auto leading-relaxed" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:cxglxd">
+        Cyprus, the island of love, is one of the most popular wedding destinations for UK couples. With over 300 days of sunshine a year and a flight time of just 4.5 hours, it offers the perfect blend of Mediterranean charm and reliable weather.
+      </p>
+    </div>
+
+    <div class="bg-surface rounded-2xl p-8 mb-12" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn2">
+      <div class="flex flex-wrap gap-6 justify-center text-[10px] font-bold uppercase tracking-widest" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn1">
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:awj89u"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>English-speaking wedding specialists</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:awj89t"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Legally recognised ceremonies</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:awj89s"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Stunning sunset backdrops</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:awj89r"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Exceptional hospitality & food</span>
+      </div>
+    </div>
+
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosqh">
+      <!-- St Raphael Resort (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosqg">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosqf">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80"]} alt="St. Raphael Resort" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosqe">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            Top Seller
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosqd">
+          <WishlistButton 
+          client:load
+          venue={{
+          id: "st-raphael-resort",
+          name: "St. Raphael Resort",
+          location: "Limassol, Cyprus",
+          image: "https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=800&q=80",
+          priceFrom: "£2,499",
+          url: "/venues/st-raphael-resort"
+          }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospr">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospq">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjyh">Limassol • Beachfront</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospp">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnv">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnu"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnt"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosns"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn6"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn5">
+                  <div class="absolute top-0 left-0 bottom-0 w-[90%] bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn4"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50al1">4.9</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:6eg5u4">St. Raphael Resort</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjyi">Beachfront luxury with a private chapel and stunning Mediterranean views, perfect for large or intimate weddings.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospo">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospn">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50al2">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50al3">£2,499</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospm">Based on 30 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospl">
+            <a href="/venues/st-raphael-resort" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k5u">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6g">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Olympic Lagoon Resort Paphos (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospk">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospj">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1695196265659-de691b30e7b7?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80"]} alt="Olympic Lagoon Resort Paphos" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kospi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            Top Seller
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosow">
+          <WishlistButton 
+          client:load
+          venue={{
+          id: "olympic-lagoon-paphos",
+          name: "Olympic Lagoon Resort Paphos",
+          location: "Paphos, Cyprus",
+          image: "https://images.unsplash.com/photo-1695196265659-de691b30e7b7?auto=format&w=800&q=80",
+          priceFrom: "£4,999",
+          url: "/venues/st-raphael-resort"
+          }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosov">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosou">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjyj">Paphos • Beachfront</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosot">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn3">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn2"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn1"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn0"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmz"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmy"></div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50alq">5.0</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:ykqvj9">Olympic Lagoon</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjyk">A premium all-inclusive resort offering multiple stunning ceremony locations overlooking the Mediterranean sea.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosos">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosor">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50alr">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50als">£4,999</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosoq">Based on 20 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosop">
+            <a href="/venues/st-raphael-resort" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6h">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6i">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vasilias Nikoklis Inn (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosoo">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koson">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1643856557143-09189e523fd6?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80"]} alt="Vasilias Nikoklis Inn" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koso1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            Top Seller
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koso0">
+          <WishlistButton 
+          client:load
+          venue={{
+          id: "vasilias-nikoklis",
+          name: "Vasilias Nikoklis Inn",
+          location: "Nikokleia, Cyprus",
+          image: "https://images.unsplash.com/photo-1643856557143-09189e523fd6?auto=format&w=800&q=80",
+          priceFrom: "£3,450",
+          url: "/venues/st-raphael-resort"
+          }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnz">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosny">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjyl">Nikokleia • Rustic Villa</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnx">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmx">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmb"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosma"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm9"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm8"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm7"></div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50alu">5.0</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:ykqvj8">Vasilias Nikoklis Inn</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjym">A family-run traditional stone inn offering a charming and private atmosphere for intimate wedding celebrations.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnw">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnv">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50alv">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50alw">£3,450</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnu">Based on 15 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosnt">
+            <a href="/venues/st-raphael-resort" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6j">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6k">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Elias Beach Hotel (FEATURED) -->
+      <div class="bg-primary text-white border border-primary rounded-xl overflow-hidden shadow-sm hover:-translate-y-1 transition-transform flex flex-col h-full relative" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosns">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn6">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1673807945389-4cc21ea611f6?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80"]} alt="Elias Beach Hotel" />
+          <div class="absolute top-4 left-4 bg-accent text-white px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-sm z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm8">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          Top Seller
+          </div>
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn4">
+            <WishlistButton 
+              client:load
+              venue={{
+                id: "elias-beach",
+                name: "Elias Beach Hotel",
+                location: "Limassol, Cyprus",
+                image: "https://images.unsplash.com/photo-1673807945389-4cc21ea611f6?auto=format&w=800&q=80",
+                priceFrom: "£4,200",
+                url: "/venues/st-raphael-resort"
+              }} 
+              iconOnly={true} 
+            />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn3">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn2">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjyn">Limassol • Hotel & Spa</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn1">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm6">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm5"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm4"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm3"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm2"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslg">
+                  <div class="absolute top-0 left-0 bottom-0 w-[80%] bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslf"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50aly">4.8</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:ykqvj7">Elias Beach Hotel</h3>
+          <p class="text-sm text-white/80 leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjz9">Features the exclusive Sunset Pier, providing a unique 'wedding on the water' experience with spectacular views.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosn0">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmz">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-white/70 mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50alz">From</span>
+              <span class="text-2xl font-bold text-white" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50aml">£4,200</span>
+            </div>
+            <div class="text-[12px] text-white/50 text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmy">Based on 30 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmx">
+            <a href="/venues/st-raphael-resort" class="bg-white text-primary text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-gray-100 transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6l">View Venue</a>
+            <a href="/enquire2" class="text-white text-[10px] font-bold uppercase tracking-[2px] text-center hover:text-accent transition-colors" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6m">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 1 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosmb">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosma">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1695196265659-de691b30e7b7?auto=format&w=800&q=80"]} alt="Cyprus Grand Villa" />
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm9">
+          <WishlistButton 
+          client:load
+          venue={{ id: "cyprus-grand-villa", name: "Cyprus Grand Villa", location: "Ayia Napa, Cyprus", image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80", priceFrom: "£2,800", url: "/venues/st-raphael-resort" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm8">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm7">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjza">Ayia Napa • Private Villa</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm6">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosle">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosld"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslc"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslb"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosla"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosl9">
+                  <div class="absolute top-0 left-0 bottom-0 w-[70%] bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosl8"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amm">4.7</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:ykqvj6">Cyprus Grand Villa</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjzb">An exquisite private villa with panoramic sea views and lush gardens, perfect for a secluded and intimate wedding celebration.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm5">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amn">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amo">£2,800</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm3">Based on 20 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosm2">
+            <a href="/venues/st-raphael-resort" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6n">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6o">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 2 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslg">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslf">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80"]} alt="Nissi Beach Gardens" />
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosle">
+          <WishlistButton 
+          client:load
+          venue={{ id: "nissi-beach-gardens", name: "Nissi Beach Gardens", location: "Ayia Napa, Cyprus", image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&w=800&q=80", priceFrom: "£3,100", url: "/venues/st-raphael-resort" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosld">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslc">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjzc">Ayia Napa • Botanical Gardens</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koslb">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosl7">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskl"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskk"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskj"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koski"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskh">
+                  <div class="absolute top-0 left-0 bottom-0 w-[50%] bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskg"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amp">4.5</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:ykqvj5">Nissi Beach Gardens</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjzd">Say your vows surrounded by exotic flora and direct access to one of Europe's most famous white sand beaches.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosla">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosl9">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amq">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amr">£3,100</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosl8">Based on 40 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1kosl7">
+            <a href="/venues/st-raphael-resort" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k6p">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k7b">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 3 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskl">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskk">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80"]} alt="Aphrodite Hills Resort" />
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskj">
+          <WishlistButton 
+          client:load
+          venue={{ id: "aphrodite-hills", name: "Aphrodite Hills Resort", location: "Paphos, Cyprus", image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&w=800&q=80", priceFrom: "£4,500", url: "/venues/st-raphael-resort" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koski">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskh">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjze">Paphos • Golf Resort</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskg">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskf">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koske"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskd"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskc"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmk"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmj">
+                  <div class="absolute top-0 left-0 bottom-0 w-[80%] bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmi"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50ams">4.8</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:ykqvj4">Aphrodite Hills Resort</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjzf">A luxurious hilltop destination offering panoramic vistas, elegant banqueting, and a dedicated chapel for ceremonies.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskf">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koske">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amt">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50amu">£4,500</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskd">Based on 50 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:1koskc">
+            <a href="/venues/st-raphael-resort" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k7c">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k7d">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normal Placeholder 4 -->
+      <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift flex flex-col h-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmk">
+        <div class="relative aspect-video overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmj">
+          <VenueImageSlider client:load images={["https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1657306056630-620f09ef93dc?auto=format&w=800&q=80", "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&w=800&q=80"]} alt="Larnaca Marina Pavilion" />
+          <div class="absolute top-4 right-4 z-10" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmi">
+          <WishlistButton 
+          client:load
+          venue={{ id: "larnaca-marina", name: "Larnaca Marina Pavilion", location: "Larnaca, Cyprus", image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&w=800&q=80", priceFrom: "£2,100", url: "/venues/st-raphael-resort" }} 
+          iconOnly={true} 
+          />
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmh">
+          <div class="flex flex-col gap-2 mb-4" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmg">
+            <p class="text-[10px] font-bold uppercase tracking-[2px] text-primary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjzg">Larnaca • Seaside Pavilion</p>
+            <div class="bg-white px-3 py-1.5 rounded-full inline-flex w-max items-center gap-1.5 shadow-sm border border-border" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmf">
+              <div class="flex items-center gap-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmh">
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmg"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmf"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofme"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmd"></div>
+                <div class="relative w-2.5 h-2.5 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmc">
+                  <div class="absolute top-0 left-0 bottom-0 w-[60%] bg-[#00aa6c]" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmb"></div>
+                </div>
+              </div>
+              <span class="text-secondary font-bold text-xs ml-0.5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50ang">4.6</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold font-serif text-secondary mb-3" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:ykqvj3">Larnaca Marina Pavilion</h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-8 flex-grow" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:pddjzh">Celebrate with the Mediterranean breeze on a stylish modern pavilion directly overlooking the luxury yachts of Larnaca Marina.</p>
+          <div class="flex items-end justify-between mb-6 mt-auto" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofme">
+            <div class="flex flex-col" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmd">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-1" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50anh">From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:h50ani">£2,100</span>
+            </div>
+            <div class="text-[12px] text-muted-foreground text-right" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmc">Based on 30 guests</div>
+          </div>
+          <div class="flex flex-col gap-5" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:rjofmb">
+            <a href="/venues/st-raphael-resort" class="bg-accent text-white text-center py-4 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-hover transition-colors w-full" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k7e">View Venue</a>
+            <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-[2px] text-center hover:opacity-80 transition-opacity" data-ps="src/components/destinations/cyprus/CyprusVenues.astro:wo8k7f">Enquire Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

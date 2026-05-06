@@ -1,0 +1,17 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BudgetWeddingsContent from '@/components/wedding-type/BudgetWeddingsContent.astro';
+import FeaturedCollection from '@/components/home/FeaturedCollection.astro';
+import WeddingTypeHero from '@/components/wedding-type/WeddingTypeHero.astro';
+---
+
+<BaseLayout title="Budget Weddings | The Wedding Travel Company" description="Beautiful destination weddings don't have to break the bank. Explore our selection of affordable wedding venues across Europe.">
+  <WeddingTypeHero 
+    title="Budget Weddings"
+    description="Beautiful ceremonies that don't break the bank."
+    image="https://images.pexels.com/photos/26811050/pexels-photo-26811050.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    tags={['AFFORDABLE VENUES', 'PAYMENT PLANS', 'FIXED PRICING']}
+  />
+  <BudgetWeddingsContent />
+  <FeaturedCollection />
+</BaseLayout>

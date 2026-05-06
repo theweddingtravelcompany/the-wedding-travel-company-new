@@ -1,0 +1,249 @@
+---
+// Luxury Weddings Content
+import { WishlistButton } from '@/components/wishlist/WishlistButton';
+---
+
+<section class="py-12 md:py-24 px-4 md:px-6 bg-background" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:ttspvy">
+  <div class="max-w-7xl mx-auto" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5rp">
+    <!-- Intro -->
+    <div class="text-center mb-10 md:mb-16" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5ro">
+      <h2 class="text-[42px] font-bold font-serif text-secondary mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:bf583n">The Art of Luxury Weddings</h2>
+      <p class="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed mb-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgp">
+        For couples seeking the extraordinary, our luxury weddings offer a level of refinement and sophistication that is truly world-class. We partner with the most prestigious hotels, private estates, and historic landmarks across Europe and beyond to create celebrations that surpass every expectation.
+      </p>
+      <p class="text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgo">
+        From the moment you begin your journey with us, you'll have access to our most senior planners, who specialise in orchestrating high-end events. Whether it's a cliffside ceremony in Santorini or a grand Venetian gala, we ensure every detail reflects your personal style.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 text-[10px] font-bold uppercase tracking-widest" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5rn">
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2gp"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Exclusive-use luxury venues</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2go"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Michelin-star quality catering</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2gn"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Bespoke floral & event design</span>
+        <span class="flex items-center gap-2 text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2gm"><svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Private concierge for you & guests</span>
+      </div>
+    </div>
+
+    <!-- Venues Grid -->
+    <div class="mb-10 md:mb-16" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5rm">
+      <div class="flex justify-between items-center mb-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5rl">
+        <h3 class="text-[28px] font-bold font-serif text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p4r">Luxury Venues</h3>
+        <button class="text-sm text-muted-foreground hover:text-primary transition-colors" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:oz0w79">× Close</button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qz">
+        <!-- Venue 1 -->
+        <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qy">
+          <div class="relative aspect-video overflow-hidden" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qx">
+            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&w=800&q=80" alt="Luxury Beachfront Estate" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:nt7a3x" />
+            <div class="absolute top-4 left-4 bg-primary/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qw">Luxury Pick</div>
+            <div class="absolute top-4 right-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qv">
+              <WishlistButton 
+                client:load 
+                venue={{
+                  id: "st-raphael-resort",
+                  name: "Luxury Beachfront Estate",
+                  location: "Cyprus",
+                  image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&w=800&q=80"
+                }} 
+                iconOnly={true}
+              />
+            </div>
+          </div>
+          <div class="p-6 md:p-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qu">
+            <div class="flex items-center gap-2 mb-3" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qt">
+              <div class="bg-white px-2 py-1 rounded-full flex items-center gap-1 shadow-sm border border-border/50" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5pw">
+                <div class="flex items-center gap-0.5" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5pv">
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p9"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p8"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p7"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p6"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p5"></div>
+                </div>
+                <span class="text-secondary font-bold text-[10px]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2an">5.0</span>
+              </div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgn">Cyprus • Premium Resort</p>
+            <h3 class="text-xl font-bold font-serif text-secondary mb-3" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p4q">Luxury Beachfront Estate</h3>
+            <p class="text-sm text-muted-foreground mb-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgm">An exclusive beachfront estate offering unparalleled luxury, private pool access, and bespoke wedding services for elite celebrations.</p>
+            <div class="flex items-baseline gap-2 mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qs">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2fy">Starting From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2fx">£8,999</span>
+            </div>
+            <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qr">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              Bespoke guest counts
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5qq">
+              <a href="/venues/st-raphael-resort" class="bg-secondary text-white text-center py-3 rounded-lg text-sm font-bold hover:bg-secondary-hover transition-colors" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gq47lu">Explore Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-widest text-center py-3 hover:opacity-80 transition-opacity" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gq47lt">Request Quote</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 2 -->
+        <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5q4">
+          <div class="relative aspect-video overflow-hidden" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5q3">
+            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&w=800&q=80" alt="Five-Star Palace Hotel" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:nt7a3w" />
+            <div class="absolute top-4 left-4 bg-primary/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5q2">Luxury Pick</div>
+            <div class="absolute top-4 right-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5q1">
+              <WishlistButton 
+                client:load 
+                venue={{
+                  id: "olympic-lagoon-paphos",
+                  name: "Five-Star Palace Hotel",
+                  location: "Greece",
+                  image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&w=800&q=80"
+                }} 
+                iconOnly={true}
+              />
+            </div>
+          </div>
+          <div class="p-6 md:p-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5q0">
+            <div class="flex items-center gap-2 mb-3" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5pz">
+              <div class="bg-white px-2 py-1 rounded-full flex items-center gap-1 shadow-sm border border-border/50" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p4">
+                <div class="flex items-center gap-0.5" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p3">
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p2"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p1"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p0"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau4"></div>
+                  <div class="relative w-2 h-2 rounded-full bg-[#e0e0e0] overflow-hidden" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau5">
+                    <div class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau6"></div>
+                  </div>
+                </div>
+                <span class="text-secondary font-bold text-[10px]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2am">4.9</span>
+              </div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgl">Greece • Luxury Palace</p>
+            <h3 class="text-xl font-bold font-serif text-secondary mb-3" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p4p">Five-Star Palace Hotel</h3>
+            <p class="text-sm text-muted-foreground mb-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgk">Step into a world of opulence at this historic palace hotel, featuring grand ballrooms and Michelin-star catering.</p>
+            <div class="flex items-baseline gap-2 mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5py">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2fu">Starting From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2ft">£12,500</span>
+            </div>
+            <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5px">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              Bespoke guest counts
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5pw">
+              <a href="/venues/st-raphael-resort/" class="bg-secondary text-white text-center py-3 rounded-lg text-sm font-bold hover:bg-secondary-hover transition-colors" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gq47ls">Explore Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-widest text-center py-3 hover:opacity-80 transition-opacity" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gq47lr">Request Quote</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue 3 -->
+        <div class="bg-white border border-border rounded-xl overflow-hidden shadow-sm hover-lift" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5pv">
+          <div class="relative aspect-video overflow-hidden" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p9">
+            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=800&q=80" alt="Private Mountain Villa" class="w-full h-full object-cover" loading="lazy" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:nt7a3a" />
+            <div class="absolute top-4 left-4 bg-primary/90 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-white" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p8">Luxury Pick</div>
+            <div class="absolute top-4 right-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p7">
+              <WishlistButton 
+                client:load 
+                venue={{
+                  id: "vasilias-nikoklis-inn",
+                  name: "Private Mountain Villa",
+                  location: "Italy",
+                  image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=800&q=80"
+                }} 
+                iconOnly={true}
+              />
+            </div>
+          </div>
+          <div class="p-6 md:p-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p6">
+            <div class="flex items-center gap-2 mb-3" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p5">
+              <div class="bg-white px-2 py-1 rounded-full flex items-center gap-1 shadow-sm border border-border/50" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau7">
+                <div class="flex items-center gap-0.5" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau8">
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau9"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnaua"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnaub"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnauc"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00aa6c]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnaud"></div>
+                </div>
+                <span class="text-secondary font-bold text-[10px]" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2al">5.0</span>
+              </div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-1" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgj">Italy • Exclusive Villa</p>
+            <h3 class="text-xl font-bold font-serif text-secondary mb-3" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p4o">Private Mountain Villa</h3>
+            <p class="text-sm text-muted-foreground mb-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgi">A secluded mountain retreat offering complete privacy, panoramic views of the Amalfi coast, and high-end concierge service.</p>
+            <div class="flex items-baseline gap-2 mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p4">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-muted-foreground" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2fq">Starting From</span>
+              <span class="text-2xl font-bold text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:5ng2fp">£7,200</span>
+            </div>
+            <div class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p3">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+              Bespoke guest counts
+            </div>
+            <div class="grid grid-cols-2 gap-4" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p2">
+              <a href="/venues/st-raphael-resort/" class="bg-secondary text-white text-center py-3 rounded-lg text-sm font-bold hover:bg-secondary-hover transition-colors" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gq47lq">Explore Venue</a>
+              <a href="/enquire2" class="text-primary text-[10px] font-bold uppercase tracking-widest text-center py-3 hover:opacity-80 transition-opacity" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gq47lp">Request Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="py-12 md:py-24 bg-surface rounded-2xl px-6 md:px-12 mb-10 md:mb-16" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p1">
+      <h2 class="text-[36px] font-bold font-serif text-secondary text-center mb-12" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:bf583o">Frequently Asked Questions</h2>
+      <p class="text-muted-foreground text-center mb-10" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgh">What you need to know about planning a luxury wedding</p>
+
+      <div class="space-y-4 max-w-3xl mx-auto" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:lay5p0">
+        <details class="bg-white rounded-xl p-6 group">
+          <summary class="flex justify-between items-center cursor-pointer list-none">
+            <h3 class="text-[18px] font-bold text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p4n">What makes a wedding 'Luxury' with your company?</h3>
+            <svg class="w-5 h-5 text-primary transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="text-muted-foreground mt-4 leading-relaxed" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcgg">Our luxury weddings include exclusive-use venues, premium beverage packages, high-end floral design, and dedicated wedding coordinators to handle every intricate detail of your celebration.</p>
+        </details>
+
+        <details class="bg-white rounded-xl p-6 group">
+          <summary class="flex justify-between items-center cursor-pointer list-none">
+            <h3 class="text-[18px] font-bold text-secondary" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p41">Can we customise the luxury packages?</h3>
+            <svg class="w-5 h-5 text-primary transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <p class="text-muted-foreground mt-4 leading-relaxed" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcfu">Absolutely. Every luxury wedding is unique. We work with you to tailor every element, from private jet transfers to multi-day celebrations and bespoke entertainment.</p>
+        </details>
+      </div>
+    </div>
+
+    <!-- Other Wedding Types -->
+    <div class="mb-10 md:mb-16" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau4">
+      <h2 class="text-[28px] font-bold font-serif text-secondary mb-8 text-center" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:bf583p">Other Wedding Types</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau5">
+        <a href="/wedding-type/budget-weddings" class="relative rounded-2xl overflow-hidden h-[300px] group no-underline" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gq47lo">
+          <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&w=600&q=80" alt="Budget Weddings" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:nt7a39" />
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau6"></div>
+          <div class="absolute bottom-0 left-0 p-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau7">
+            <h3 class="text-xl font-bold font-serif text-white" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p40">Budget Weddings</h3>
+            <p class="text-white/80 text-[10px] font-bold uppercase tracking-widest" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcft">Explore Style →</p>
+          </div>
+        </a>
+        <a href="/wedding-type/all-inclusive-weddings" class="relative rounded-2xl overflow-hidden h-[300px] group no-underline" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:9pdfsl">
+          <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&w=600&q=80" alt="All Inclusive Weddings" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:nt7a38" />
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau8"></div>
+          <div class="absolute bottom-0 left-0 p-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnau9">
+            <h3 class="text-xl font-bold font-serif text-white" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p3z">All Inclusive Weddings</h3>
+            <p class="text-white/80 text-[10px] font-bold uppercase tracking-widest" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcfs">Explore Style →</p>
+          </div>
+        </a>
+        <a href="/wedding-type/boat-weddings" class="relative rounded-2xl overflow-hidden h-[300px] group no-underline" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:9pdfsk">
+          <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&w=600&q=80" alt="Boat Weddings" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:nt7a37" />
+          <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnaua"></div>
+          <div class="absolute bottom-0 left-0 p-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnaub">
+            <h3 class="text-xl font-bold font-serif text-white" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:399p3y">Boat Weddings</h3>
+            <p class="text-white/80 text-[10px] font-bold uppercase tracking-widest" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcfr">Explore Style →</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-surface rounded-2xl p-6 md:p-12 text-center" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnauc">
+      <h2 class="text-[36px] font-bold font-serif text-secondary mb-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:bf583q">Ready to plan your Luxury Weddings?</h2>
+      <p class="text-muted-foreground text-lg mb-10" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:gtbcfq">Speak to our elite planners and receive a bespoke proposal for your dream destination wedding.</p>
+      <div class="flex flex-wrap justify-center gap-6" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:jxnaud">
+        <a href="/enquire2" class="bg-primary text-white px-10 py-5 rounded-xl font-bold uppercase tracking-widest text-[14px] hover:bg-primary-hover transition-colors shadow-lg shadow-primary/20" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:9pdfsj">Contact Our VIP Team</a>
+        <a href="tel:08000911137" class="bg-secondary text-white px-10 py-5 rounded-xl font-bold uppercase tracking-widest text-[14px] hover:bg-secondary-hover transition-colors shadow-lg shadow-secondary/20" data-ps="src/components/wedding-type/LuxuryWeddingsContent.astro:9pdfsi">Call 0800 0911 137</a>
+      </div>
+    </div>
+  </div>
+</section>
