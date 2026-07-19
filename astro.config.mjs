@@ -10,9 +10,11 @@ import remarkToc from './src/plugins/remark-toc.mjs';
 
 // https://astro.build/config
 export default defineConfig({
+  session: { driver: 'lruCache' },
   output: 'static',
   trailingSlash: 'always',
   adapter: cloudflare({
+    prerenderEnvironment: 'node',
     imageService: 'passthrough',
   }),
   site: process.env.SITE_URL || 'https://example.com',
